@@ -1,15 +1,15 @@
 <http://www.normansicily.org/nsp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://www.normansicily.org/nsp> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.normansicily.org/nsp/0.1> .
-<http://www.normansicily.org/nsp> <http://purl.org/dc/elements/1.1/creator> <http://www.normansicily.org/nsp/hayesd> .
-<http://www.normansicily.org/nsp> <http://purl.org/dc/elements/1.1/creator> <http://www.normansicily.org/nsp/joephayes> .
+<http://www.normansicily.org/nsp> <http://purl.org/dc/elements/1.1/creator> <http://www.normansicily.org/nsp#hayesd> .
+<http://www.normansicily.org/nsp> <http://purl.org/dc/elements/1.1/creator> <http://www.normansicily.org/nsp#joephayes> .
+<http://www.normansicily.org/nsp> <http://purl.org/dc/elements/1.1/description> "Vocabulary for describing the places, locations and names of Norman Sicily that are available through The Norman Sicily Project site, http://www.normansicily.org/"@en .
 <http://www.normansicily.org/nsp> <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> .
-<http://www.normansicily.org/nsp> <http://purl.org/dc/elements/1.1/publisher> <http://www.normansicily.org/nsp/nsp> .
+<http://www.normansicily.org/nsp> <http://purl.org/dc/elements/1.1/publisher> <http://www.normansicily.org/nsp#nsp> .
 <http://www.normansicily.org/nsp> <http://purl.org/dc/elements/1.1/title> "The Norman Sicily Project Vocabulary"@en .
 <http://www.normansicily.org/nsp> <http://purl.org/dc/terms/created> "2018-05-30" .
 <http://www.normansicily.org/nsp> <http://purl.org/vocab/vann/changes> <https://github.com/the-norman-sicily-project/vocabulary/commits/master> .
 <http://www.normansicily.org/nsp> <http://purl.org/vocab/vann/preferredNamespacePrefix> "nsp" .
 <http://www.normansicily.org/nsp> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.normansicily.org/nsp" .
-<http://www.normansicily.org/nsp> <http://www.w3.org/2000/01/rdf-schema#description> "Vocabulary for describing the places, locations and names of Norman Sicily that are available through The Norman Sicily Project site, http://www.normansicily.org/"@en .
 <http://www.normansicily.org/nsp> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.normansicily.org> .
 <http://www.normansicily.org/nsp> <http://www.w3.org/2002/07/owl#priorVersion> "" .
 <http://www.normansicily.org/nsp> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .

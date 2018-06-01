@@ -8,32 +8,32 @@
     },
     "iri" : "http://www.normansicily.org/nsp",
     "version" : "0.1",
-    "author" : [ "http://www.normansicily.org/nsp/joephayes", "http://www.normansicily.org/nsp/hayesd" ],
+    "author" : [ "http://www.normansicily.org/nsp#hayesd", "http://www.normansicily.org/nsp#joephayes" ],
     "description" : {
       "en" : "Vocabulary for describing the places, locations and names of Norman Sicily that are available through The Norman Sicily Project site, http://www.normansicily.org/"
     },
     "other" : {
-      "license" : [ {
-        "identifier" : "license",
-        "language" : "undefined",
-        "value" : "https://creativecommons.org/licenses/by/4.0/",
-        "type" : "iri"
-      } ],
       "priorVersion" : [ {
         "identifier" : "priorVersion",
         "language" : "undefined",
         "value" : "",
         "type" : "label"
       } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "http://www.normansicily.org/nsp/joephayes",
+        "value" : "http://www.normansicily.org/nsp#joephayes",
         "type" : "iri"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "http://www.normansicily.org/nsp/hayesd",
+        "value" : "http://www.normansicily.org/nsp#hayesd",
         "type" : "iri"
       } ],
       "created" : [ {
@@ -57,7 +57,7 @@
       "publisher" : [ {
         "identifier" : "publisher",
         "language" : "undefined",
-        "value" : "http://www.normansicily.org/nsp/nsp",
+        "value" : "http://www.normansicily.org/nsp#nsp",
         "type" : "iri"
       } ],
       "preferredNamespaceUri" : [ {
@@ -511,12 +511,12 @@
   }, {
     "instances" : 0,
     "union" : [ "30", "0" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "59"
   }, {
     "instances" : 0,
     "union" : [ "4", "0" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "60"
   }, {
     "iri" : "http://purl.org/dc/terms/RFC5646",
@@ -563,12 +563,12 @@
   }, {
     "instances" : 0,
     "union" : [ "30", "0" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "3"
   }, {
     "instances" : 0,
     "union" : [ "4", "0" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "53"
   }, {
     "iri" : "http://www.normansicily.org/nsp#Location",

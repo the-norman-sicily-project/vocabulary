@@ -14,14 +14,14 @@
     <owl:Ontology rdf:about="http://www.normansicily.org/nsp">
         <owl:versionIRI rdf:resource="http://www.normansicily.org/nsp/0.1"/>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
-        <dc:publisher rdf:resource="http://www.normansicily.org/nsp/nsp"/>
+        <dc:publisher rdf:resource="http://www.normansicily.org/nsp#nsp"/>
         <dcterms:created>2018-05-30</dcterms:created>
-        <dc:creator rdf:resource="http://www.normansicily.org/nsp/joephayes"/>
+        <dc:creator rdf:resource="http://www.normansicily.org/nsp#joephayes"/>
         <owl:priorVersion></owl:priorVersion>
         <vann:changes rdf:resource="https://github.com/the-norman-sicily-project/vocabulary/commits/master"/>
         <vann:preferredNamespacePrefix>nsp</vann:preferredNamespacePrefix>
-        <dc:creator rdf:resource="http://www.normansicily.org/nsp/hayesd"/>
-        <rdfs:description xml:lang="en">Vocabulary for describing the places, locations and names of Norman Sicily that are available through The Norman Sicily Project site, http://www.normansicily.org/</rdfs:description>
+        <dc:creator rdf:resource="http://www.normansicily.org/nsp#hayesd"/>
+        <dc:description xml:lang="en">Vocabulary for describing the places, locations and names of Norman Sicily that are available through The Norman Sicily Project site, http://www.normansicily.org/</dc:description>
         <vann:preferredNamespaceUri>http://www.normansicily.org/nsp</vann:preferredNamespaceUri>
         <rdfs:seeAlso rdf:resource="http://www.normansicily.org"/>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
