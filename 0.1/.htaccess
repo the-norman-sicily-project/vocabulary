@@ -1,0 +1,9 @@
+Options -MultiViews
+
+AddType application/rdf+xml .owl
+
+RewriteEngine On
+RewriteBase /vocab/0.1
+
+# Default response
+RewriteRule ^$ nsp.owl

@@ -1,0 +1,620 @@
+<http://www.normansicily.org/nsp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.normansicily.org/nsp> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.normansicily.org/nsp/0.1> .
+<http://www.normansicily.org/nsp> <http://purl.org/dc/elements/1.1/creator> <http://www.normansicily.org/nsp/hayesd> .
+<http://www.normansicily.org/nsp> <http://purl.org/dc/elements/1.1/creator> <http://www.normansicily.org/nsp/joephayes> .
+<http://www.normansicily.org/nsp> <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://www.normansicily.org/nsp> <http://purl.org/dc/elements/1.1/publisher> <http://www.normansicily.org/nsp/nsp> .
+<http://www.normansicily.org/nsp> <http://purl.org/dc/elements/1.1/title> "The Norman Sicily Project Vocabulary"@en .
+<http://www.normansicily.org/nsp> <http://purl.org/dc/terms/created> "2018-05-30" .
+<http://www.normansicily.org/nsp> <http://purl.org/vocab/vann/changes> <https://github.com/the-norman-sicily-project/vocabulary/commits/master> .
+<http://www.normansicily.org/nsp> <http://purl.org/vocab/vann/preferredNamespacePrefix> "nsp" .
+<http://www.normansicily.org/nsp> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.normansicily.org/nsp" .
+<http://www.normansicily.org/nsp> <http://www.w3.org/2000/01/rdf-schema#description> "Vocabulary for describing the places, locations and names of Norman Sicily that are available through The Norman Sicily Project site, http://www.normansicily.org/"@en .
+<http://www.normansicily.org/nsp> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.normansicily.org> .
+<http://www.normansicily.org/nsp> <http://www.w3.org/2002/07/owl#priorVersion> "" .
+<http://www.normansicily.org/nsp> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/changes
+<http://purl.org/vocab/vann/changes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.normansicily.org/nsp#recordStatus
+<http://www.normansicily.org/nsp#recordStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+# 
+# http://xmlns.com/foaf/0.1/organization
+<http://xmlns.com/foaf/0.1/organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://n2t.net/ark:/99152/p0qwjcd
+<http://n2t.net/ark:/99152/p0qwjcd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://purl.org/dc/terms/RFC5646
+<http://purl.org/dc/terms/RFC5646> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#gYear
+<http://www.w3.org/2001/XMLSchema#gYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.normansicily.org/nsp#contains
+<http://www.normansicily.org/nsp#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.normansicily.org/nsp#contains> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.normansicily.org/nsp#isIn> .
+<http://www.normansicily.org/nsp#contains> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dbpedia.org/ontology/Province> .
+<http://www.normansicily.org/nsp#contains> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.normansicily.org/nsp#Location> .
+# 
+# http://www.normansicily.org/nsp#hasFounder
+<http://www.normansicily.org/nsp#hasFounder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.normansicily.org/nsp#hasFounder> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.normansicily.org/nsp#isFounderOf> .
+<http://www.normansicily.org/nsp#hasFounder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.normansicily.org/nsp#Place> .
+<http://www.normansicily.org/nsp#hasFounder> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.normansicily.org/nsp#Founder> .
+# 
+# http://www.normansicily.org/nsp#hasLocation
+<http://www.normansicily.org/nsp#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.normansicily.org/nsp#hasLocation> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.normansicily.org/nsp#isLocationOf> .
+<http://www.normansicily.org/nsp#hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.normansicily.org/nsp#Name> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.normansicily.org/nsp#Place> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.normansicily.org/nsp#hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.normansicily.org/nsp#Location> .
+# 
+# http://www.normansicily.org/nsp#hasName
+<http://www.normansicily.org/nsp#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.normansicily.org/nsp#hasName> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.normansicily.org/nsp#isNameOf> .
+<http://www.normansicily.org/nsp#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.normansicily.org/nsp#Location> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.normansicily.org/nsp#Place> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.normansicily.org/nsp#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.normansicily.org/nsp#Name> .
+# 
+# http://www.normansicily.org/nsp#isFounderOf
+<http://www.normansicily.org/nsp#isFounderOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.normansicily.org/nsp#isFounderOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.normansicily.org/nsp#Founder> .
+<http://www.normansicily.org/nsp#isFounderOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.normansicily.org/nsp#Place> .
+# 
+# http://www.normansicily.org/nsp#isIn
+<http://www.normansicily.org/nsp#isIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.normansicily.org/nsp#isIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.normansicily.org/nsp#Location> .
+<http://www.normansicily.org/nsp#isIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/Province> .
+# 
+# http://www.normansicily.org/nsp#isLocationOf
+<http://www.normansicily.org/nsp#isLocationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.normansicily.org/nsp#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.normansicily.org/nsp#Location> .
+<http://www.normansicily.org/nsp#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.normansicily.org/nsp#Name> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.normansicily.org/nsp#Place> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.normansicily.org/nsp#isNameOf
+<http://www.normansicily.org/nsp#isNameOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.normansicily.org/nsp#isNameOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.normansicily.org/nsp#Name> .
+<http://www.normansicily.org/nsp#isNameOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid10 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.normansicily.org/nsp#Location> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.normansicily.org/nsp#Place> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.normansicily.org/nsp#isNear
+<http://www.normansicily.org/nsp#isNear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.normansicily.org/nsp#isNear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.normansicily.org/nsp#Location> .
+<http://www.normansicily.org/nsp#isNear> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/Municipality> .
+# 
+# http://www.normansicily.org/nsp#wasContainedBy
+<http://www.normansicily.org/nsp#wasContainedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.normansicily.org/nsp#wasContainedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.normansicily.org/nsp#wasIn> .
+<http://www.normansicily.org/nsp#wasContainedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dbpedia.org/ontology/HistoricalProvince> .
+<http://www.normansicily.org/nsp#wasContainedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.normansicily.org/nsp#Location> .
+# 
+# http://www.normansicily.org/nsp#wasIn
+<http://www.normansicily.org/nsp#wasIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.normansicily.org/nsp#wasIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.normansicily.org/nsp#Location> .
+<http://www.normansicily.org/nsp#wasIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/HistoricalProvince> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/language
+<http://purl.org/dc/terms/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.normansicily.org/nsp#Name> .
+<http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/RFC5646> .
+# 
+# http://schema.org/honorificPrefix
+<http://schema.org/honorificPrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/honorificPrefix> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.normansicily.org/nsp#Founder> .
+# 
+# http://www.normansicily.org/nsp#archaeologicalRemains
+<http://www.normansicily.org/nsp#archaeologicalRemains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.normansicily.org/nsp#archaeologicalRemains> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.normansicily.org/nsp#Location> .
+<http://www.normansicily.org/nsp#archaeologicalRemains> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.normansicily.org/nsp#dedication
+<http://www.normansicily.org/nsp#dedication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.normansicily.org/nsp#dedication> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.normansicily.org/nsp#Monastery> .
+<http://www.normansicily.org/nsp#dedication> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.normansicily.org/nsp#earliestAttestation
+<http://www.normansicily.org/nsp#earliestAttestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.normansicily.org/nsp#isPreferred
+<http://www.normansicily.org/nsp#isPreferred> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.normansicily.org/nsp#isPreferred> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.normansicily.org/nsp#Name> .
+<http://www.normansicily.org/nsp#isPreferred> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.normansicily.org/nsp#locationCategory
+<http://www.normansicily.org/nsp#locationCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.normansicily.org/nsp#locationCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.normansicily.org/nsp#Location> .
+<http://www.normansicily.org/nsp#locationCategory> <http://www.w3.org/2000/01/rdf-schema#range> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid13 <http://www.w3.org/2002/07/owl#oneOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Associated Modern" .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Central Point" .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Representative" .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Unknown" .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.normansicily.org/nsp#maxEarliestAttestation
+<http://www.normansicily.org/nsp#maxEarliestAttestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.normansicily.org/nsp#maxEarliestAttestation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.normansicily.org/nsp#earliestAttestation> .
+<http://www.normansicily.org/nsp#maxEarliestAttestation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#gYear> .
+# 
+# http://www.normansicily.org/nsp#minEarliestAttestation
+<http://www.normansicily.org/nsp#minEarliestAttestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.normansicily.org/nsp#minEarliestAttestation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.normansicily.org/nsp#earliestAttestation> .
+<http://www.normansicily.org/nsp#minEarliestAttestation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#gYear> .
+# 
+# http://www.normansicily.org/nsp#order
+<http://www.normansicily.org/nsp#order> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.normansicily.org/nsp#order> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.normansicily.org/nsp#Monastery> .
+<http://www.normansicily.org/nsp#order> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.normansicily.org/nsp#placeCategory
+<http://www.normansicily.org/nsp#placeCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.normansicily.org/nsp#placeCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.normansicily.org/nsp#Place> .
+<http://www.normansicily.org/nsp#placeCategory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.normansicily.org/nsp#positionalAccuracyAssessment
+<http://www.normansicily.org/nsp#positionalAccuracyAssessment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.normansicily.org/nsp#positionalAccuracyAssessment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.normansicily.org/nsp#Location> .
+<http://www.normansicily.org/nsp#positionalAccuracyAssessment> <http://www.w3.org/2000/01/rdf-schema#range> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid18 <http://www.w3.org/2002/07/owl#oneOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Generic Handheld GPS" .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Google Earth" .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Unknown" .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.normansicily.org/nsp#seismicClassId
+<http://www.normansicily.org/nsp#seismicClassId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.normansicily.org/nsp#seismicClassId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.normansicily.org/nsp#Location> .
+<http://www.normansicily.org/nsp#seismicClassId> <http://www.w3.org/2000/01/rdf-schema#range> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid22 <http://www.w3.org/2002/07/owl#oneOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.normansicily.org/nsp#type
+<http://www.normansicily.org/nsp#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.normansicily.org/nsp#type> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.normansicily.org/nsp#Place> .
+<http://www.normansicily.org/nsp#type> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.normansicily.org/nsp/rankAtFoundaion
+<http://www.normansicily.org/nsp/rankAtFoundaion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.normansicily.org/nsp/rankAtFoundaion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.normansicily.org/nsp#Monastery> .
+<http://www.normansicily.org/nsp/rankAtFoundaion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#label
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.normansicily.org/nsp#Name> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#alt
+<http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.normansicily.org/nsp#Location> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#lat
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.normansicily.org/nsp#Location> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#long
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.normansicily.org/nsp#Location> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://xmlns.com/foaf/0.1/gender
+<http://xmlns.com/foaf/0.1/gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/gender> <http://www.w3.org/2000/01/rdf-schema#range> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid27 <http://www.w3.org/2002/07/owl#oneOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Female" .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Male" .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Unknown" .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# https://www.normansicily.org/nsp#reignOfEarliestAttestestation
+<https://www.normansicily.org/nsp#reignOfEarliestAttestestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.normansicily.org/nsp#reignOfEarliestAttestestation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.normansicily.org/nsp#Place> .
+<https://www.normansicily.org/nsp#reignOfEarliestAttestestation> <http://www.w3.org/2000/01/rdf-schema#range> <http://n2t.net/ark:/99152/p0qwjcd> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/ontology/HistoricalProvince
+<http://dbpedia.org/ontology/HistoricalProvince> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://dbpedia.org/ontology/Municipality
+<http://dbpedia.org/ontology/Municipality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://dbpedia.org/ontology/Province
+<http://dbpedia.org/ontology/Province> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.normansicily.org/nsp#Founder
+<http://www.normansicily.org/nsp#Founder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.normansicily.org/nsp#Founder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://www.normansicily.org/nsp#Location
+<http://www.normansicily.org/nsp#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.normansicily.org/nsp#Monastery
+<http://www.normansicily.org/nsp#Monastery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.normansicily.org/nsp#Monastery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.normansicily.org/nsp#Place> .
+# 
+# http://www.normansicily.org/nsp#Name
+<http://www.normansicily.org/nsp#Name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.normansicily.org/nsp#Place
+<http://www.normansicily.org/nsp#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Project
+<http://xmlns.com/foaf/0.1/Project> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.normansicily.org/nsp#Location
+<http://www.normansicily.org/nsp#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
+# 
+# http://www.normansicily.org/nsp#Monastery
+<http://www.normansicily.org/nsp#Monastery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#Monastery> <http://www.w3.org/2000/01/rdf-schema#label> "Monastery"@en .
+# 
+# http://www.normansicily.org/nsp#Name
+<http://www.normansicily.org/nsp#Name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#Name> <http://www.w3.org/2000/01/rdf-schema#label> "Name"@en .
+# 
+# http://www.normansicily.org/nsp#Place
+<http://www.normansicily.org/nsp#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
+# 
+# http://www.normansicily.org/nsp#archaeologicalRemains
+<http://www.normansicily.org/nsp#archaeologicalRemains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#archaeologicalRemains> <http://www.w3.org/2000/01/rdf-schema#label> "Archaeological Remains"@en .
+# 
+# http://www.normansicily.org/nsp#contains
+<http://www.normansicily.org/nsp#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#contains> <http://www.w3.org/2000/01/rdf-schema#label> "contains"@en .
+# 
+# http://www.normansicily.org/nsp#dedication
+<http://www.normansicily.org/nsp#dedication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#dedication> <http://www.w3.org/2000/01/rdf-schema#label> "Dedication"@en .
+# 
+# http://www.normansicily.org/nsp#earliestAttestation
+<http://www.normansicily.org/nsp#earliestAttestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#earliestAttestation> <http://www.w3.org/2000/01/rdf-schema#label> "Earliest Attestation"@en .
+# 
+# http://www.normansicily.org/nsp#hasFounder
+<http://www.normansicily.org/nsp#hasFounder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#hasFounder> <http://www.w3.org/2000/01/rdf-schema#label> "was founded by"@en .
+# 
+# http://www.normansicily.org/nsp#hasLocation
+<http://www.normansicily.org/nsp#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#hasLocation> <http://www.w3.org/2000/01/rdf-schema#label> "is located at"@en .
+# 
+# http://www.normansicily.org/nsp#hasName
+<http://www.normansicily.org/nsp#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#hasName> <http://www.w3.org/2000/01/rdf-schema#label> "was named"@en .
+# 
+# http://www.normansicily.org/nsp#isFounderOf
+<http://www.normansicily.org/nsp#isFounderOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#isFounderOf> <http://www.w3.org/2000/01/rdf-schema#label> "founded"@en .
+# 
+# http://www.normansicily.org/nsp#isIn
+<http://www.normansicily.org/nsp#isIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#isIn> <http://www.w3.org/2000/01/rdf-schema#label> "is in"@en .
+# 
+# http://www.normansicily.org/nsp#isLocationOf
+<http://www.normansicily.org/nsp#isLocationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#label> "is the location of"@en .
+# 
+# http://www.normansicily.org/nsp#isNameOf
+<http://www.normansicily.org/nsp#isNameOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#isNameOf> <http://www.w3.org/2000/01/rdf-schema#label> "is the name of"@en .
+# 
+# http://www.normansicily.org/nsp#isNear
+<http://www.normansicily.org/nsp#isNear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#isNear> <http://www.w3.org/2000/01/rdf-schema#label> "is near"@en .
+# 
+# http://www.normansicily.org/nsp#isPreferred
+<http://www.normansicily.org/nsp#isPreferred> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#isPreferred> <http://www.w3.org/2000/01/rdf-schema#label> "Preferred"@en .
+# 
+# http://www.normansicily.org/nsp#locationCategory
+<http://www.normansicily.org/nsp#locationCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#locationCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Location Category"@en .
+# 
+# http://www.normansicily.org/nsp#maxEarliestAttestation
+<http://www.normansicily.org/nsp#maxEarliestAttestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#maxEarliestAttestation> <http://www.w3.org/2000/01/rdf-schema#label> "Earliest Year of Earliest Attestation"@en .
+# 
+# http://www.normansicily.org/nsp#minEarliestAttestation
+<http://www.normansicily.org/nsp#minEarliestAttestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#minEarliestAttestation> <http://www.w3.org/2000/01/rdf-schema#label> "Latest Year of Earliest Attestation"@en .
+# 
+# http://www.normansicily.org/nsp#order
+<http://www.normansicily.org/nsp#order> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#order> <http://www.w3.org/2000/01/rdf-schema#label> "Order"@en .
+# 
+# http://www.normansicily.org/nsp#placeCategory
+<http://www.normansicily.org/nsp#placeCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#placeCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Place Category"@en .
+# 
+# http://www.normansicily.org/nsp#positionalAccuracyAssessment
+<http://www.normansicily.org/nsp#positionalAccuracyAssessment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#positionalAccuracyAssessment> <http://www.w3.org/2000/01/rdf-schema#label> "Positional Accuracy Assessment"@en .
+# 
+# http://www.normansicily.org/nsp#seismicClassId
+<http://www.normansicily.org/nsp#seismicClassId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#seismicClassId> <http://www.w3.org/2000/01/rdf-schema#label> "Seismic Classification"@en .
+# 
+# http://www.normansicily.org/nsp#type
+<http://www.normansicily.org/nsp#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#type> <http://www.w3.org/2000/01/rdf-schema#label> "Type"@en .
+# 
+# http://www.normansicily.org/nsp#wasContainedBy
+<http://www.normansicily.org/nsp#wasContainedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#wasContainedBy> <http://www.w3.org/2000/01/rdf-schema#label> "was contained in"@en .
+# 
+# http://www.normansicily.org/nsp#wasIn
+<http://www.normansicily.org/nsp#wasIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#wasIn> <http://www.w3.org/2000/01/rdf-schema#label> "was in"@en .
+# 
+# http://www.normansicily.org/nsp/hayesd
+<http://www.normansicily.org/nsp/hayesd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp/hayesd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.normansicily.org/nsp/hayesd> <http://xmlns.com/foaf/0.1/homepage> <http://www.thehayesweb.org/dhayes> .
+<http://www.normansicily.org/nsp/hayesd> <http://xmlns.com/foaf/0.1/mbox> <mailto:hayesd@montclair.edu> .
+<http://www.normansicily.org/nsp/hayesd> <http://xmlns.com/foaf/0.1/name> "Dawn Marie Hayes" .
+# 
+# http://www.normansicily.org/nsp/joephayes
+<http://www.normansicily.org/nsp/joephayes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp/joephayes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.normansicily.org/nsp/joephayes> <http://xmlns.com/foaf/0.1/mbox> <mailto:joephayes@gmail.com> .
+<http://www.normansicily.org/nsp/joephayes> <http://xmlns.com/foaf/0.1/name> "Joseph Hayes" .
+# 
+# http://www.normansicily.org/nsp/nsp
+<http://www.normansicily.org/nsp/nsp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp/nsp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Project> .
+<http://www.normansicily.org/nsp/nsp> <http://xmlns.com/foaf/0.1/homepage> <http://www.normansicily.org/> .
+<http://www.normansicily.org/nsp/nsp> <http://xmlns.com/foaf/0.1/organization> "The Norman Sicily Project" .
+# 
+# http://www.normansicily.org/nsp/rankAtFoundaion
+<http://www.normansicily.org/nsp/rankAtFoundaion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp/rankAtFoundaion> <http://www.w3.org/2000/01/rdf-schema#label> "Rank when founded"@en .
+# 
+# https://www.normansicily.org/nsp#reignOfEarliestAttestestation
+<https://www.normansicily.org/nsp#reignOfEarliestAttestestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.normansicily.org/nsp#reignOfEarliestAttestestation> <http://www.w3.org/2000/01/rdf-schema#label> "Reign of the earliest attestation"@en .
+# 
+_:genid31 <http://xmlns.com/foaf/0.1/homepage> <http://www.normansicily.org> .
+_:genid31 <http://xmlns.com/foaf/0.1/organization> "The Norman Sicily Project" .
+_:genid32 <http://xmlns.com/foaf/0.1/mbox> <mailto:joephayes@gmail.com> .
+_:genid32 <http://xmlns.com/foaf/0.1/name> "Joseph Hayes" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.normansicily.org/nsp#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "A Location represents a physical location on the Earth's surface"@en .
+<http://www.normansicily.org/nsp#Location> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp#Monastery> <http://www.w3.org/2000/01/rdf-schema#comment> "A monastery is the habitation of monks or nuns"@en .
+<http://www.normansicily.org/nsp#Monastery> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp#Name> <http://www.w3.org/2000/01/rdf-schema#comment> "A Name denotes a word which refers to a Place"@en .
+<http://www.normansicily.org/nsp#Name> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp#Place> <http://www.w3.org/2000/01/rdf-schema#comment> "A Place refers to a locus for which the Location may or may not be known. It may also have multiple Names."@en .
+<http://www.normansicily.org/nsp#Place> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp#archaeologicalRemains> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the state of the visible remains at a Location"@en .
+<http://www.normansicily.org/nsp#archaeologicalRemains> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp#contains> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp#dedication> <http://www.w3.org/2000/01/rdf-schema#comment> "The person or thing to which a place was dedicated"@en .
+<http://www.normansicily.org/nsp#dedication> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp#earliestAttestation> <http://www.w3.org/2000/01/rdf-schema#comment> "The earliest mention of a Place in a source"@en .
+<http://www.normansicily.org/nsp#earliestAttestation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp#hasFounder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp#hasLocation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp#hasName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp#isFounderOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp#isIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp#isNameOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp#isNear> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp#isPreferred> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp#locationCategory> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp#maxEarliestAttestation> <http://www.w3.org/2000/01/rdf-schema#comment> "The earliest year an attestation could have been made"@en .
+<http://www.normansicily.org/nsp#maxEarliestAttestation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp#minEarliestAttestation> <http://www.w3.org/2000/01/rdf-schema#comment> "The latest year an attestation could have been made"@en .
+<http://www.normansicily.org/nsp#minEarliestAttestation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp#order> <http://www.w3.org/2000/01/rdf-schema#comment> "An order is a group of person living under a religious rule"@en .
+<http://www.normansicily.org/nsp#order> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp#placeCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of the place as per the Getty AAT http://www.getty.edu/research/tools/vocabularies/aat/"@en .
+<http://www.normansicily.org/nsp#placeCategory> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp#positionalAccuracyAssessment> <http://www.w3.org/2000/01/rdf-schema#comment> "Assessment of accuracy of place's location"@en .
+<http://www.normansicily.org/nsp#positionalAccuracyAssessment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp#seismicClassId> <http://www.w3.org/2000/01/rdf-schema#comment> "Seismic classifcation as per http://www.protezionecivile.gov.it/jcms/en/classificazione.wp"@en .
+<http://www.normansicily.org/nsp#seismicClassId> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp#type> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of the Place"@en .
+<http://www.normansicily.org/nsp#type> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp#wasContainedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp#wasIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<http://www.normansicily.org/nsp/rankAtFoundaion> <http://www.w3.org/2000/01/rdf-schema#comment> "The rank of the Place when it was founded"@en .
+<http://www.normansicily.org/nsp/rankAtFoundaion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+<https://www.normansicily.org/nsp#reignOfEarliestAttestestation> <http://www.w3.org/2000/01/rdf-schema#comment> "The reign during which the earliest attestation occurred"@en .
+<https://www.normansicily.org/nsp#reignOfEarliestAttestestation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

@@ -1,0 +1,37 @@
+Options -MultiViews
+
+AddType application/rdf+xml .rdf
+AddType application/rdf+xml .owl
+AddType text/turtle .ttl
+AddType application/n-triples .n3
+AddType application/ld+json .json
+
+RewriteEngine On
+RewriteBase /vocab
+
+RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml.*(text/html|application/xhtml\+xml)
+RewriteCond %{HTTP_ACCEPT} text/html [OR]
+RewriteCond %{HTTP_ACCEPT} application/xhtml\+xml [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/.*
+RewriteRule ^nsp$ index-en.html [R=303,L]
+
+RewriteCond %{HTTP_ACCEPT} application/ld+json
+RewriteRule ^nsp$ nsp.json [R=303,L]
+
+RewriteCond %{HTTP_ACCEPT} \*/\* [OR]
+RewriteCond %{HTTP_ACCEPT} application/rdf\+xml
+RewriteRule ^nsp$ nsp.xml [R=303,L]
+
+RewriteCond %{HTTP_ACCEPT} application/n-triples
+RewriteRule ^nsp$ nsp.nt [R=303,L]
+
+RewriteCond %{HTTP_ACCEPT} text/turtle [OR]
+RewriteCond %{HTTP_ACCEPT} text/\* [OR]
+RewriteCond %{HTTP_ACCEPT} \*/turtle 
+RewriteRule ^nsp$ nsp.ttl [R=303,L]
+
+RewriteCond %{HTTP_ACCEPT} .+
+RewriteRule ^nsp$ 406.html [R=406,L]
+
+# Default response
+RewriteRule ^nsp$ nsp.xml [R=303,L]
