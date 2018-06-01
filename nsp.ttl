@@ -584,18 +584,12 @@ rdfs:label rdf:type owl:DatatypeProperty ;
                                                                  rdfs:label "Reign of the earliest attestation"@en .
 
 
-_:genid31 <http://xmlns.com/foaf/0.1/homepage> <http://www.normansicily.org> ;
-          <http://xmlns.com/foaf/0.1/organization> "The Norman Sicily Project"^^xsd:string .
-
-_:genid32 <http://xmlns.com/foaf/0.1/mbox> <mailto:joephayes@gmail.com> ;
-           <http://xmlns.com/foaf/0.1/name> "Joseph Hayes"^^xsd:string .
-
 #################################################################
 #    Annotations
 #################################################################
 
 :Location rdfs:comment "A Location represents a physical location on the Earth's surface"@en ;
-           rdfs:isDefinedBy : .
+          rdfs:isDefinedBy : .
 
 
 :Monastery rdfs:comment "A monastery is the habitation of monks or nuns"@en ;

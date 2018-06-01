@@ -941,15 +941,6 @@
     <owl:NamedIndividual rdf:about="https://www.normansicily.org/nsp#reignOfEarliestAttestestation">
         <rdfs:label xml:lang="en">Reign of the earliest attestation</rdfs:label>
     </owl:NamedIndividual>
-    <rdf:Description>
-        <foaf:mbox rdf:resource="mailto:joephayes@gmail.com"/>
-        <foaf:name>Joseph Hayes</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <foaf:homepage rdf:resource="http://www.normansicily.org"/>
-        <foaf:organization>The Norman Sicily Project</foaf:organization>
-    </rdf:Description>
-    
 
 
     <!-- 

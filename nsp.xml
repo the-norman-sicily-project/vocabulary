@@ -1038,14 +1038,6 @@
     <owl:NamedIndividual rdf:about="https://www.normansicily.org/nsp#reignOfEarliestAttestestation">
         <rdfs:label xml:lang="en">Reign of the earliest attestation</rdfs:label>
     </owl:NamedIndividual>
-    <rdf:Description rdf:nodeID="_:genid31">
-        <foaf:homepage rdf:resource="http://www.normansicily.org"/>
-        <foaf:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Norman Sicily Project</foaf:organization>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="_:genid32">
-        <foaf:mbox rdf:resource="mailto:joephayes@gmail.com"/>
-        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joseph Hayes</foaf:name>
-    </rdf:Description>
     
 
 

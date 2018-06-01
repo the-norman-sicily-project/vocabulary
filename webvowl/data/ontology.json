@@ -28,12 +28,12 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "http://www.normansicily.org/nsp#joephayes",
+        "value" : "http://www.normansicily.org/nsp#hayesd",
         "type" : "iri"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "http://www.normansicily.org/nsp#hayesd",
+        "value" : "http://www.normansicily.org/nsp#joephayes",
         "type" : "iri"
       } ],
       "created" : [ {
@@ -60,16 +60,16 @@
         "value" : "http://www.normansicily.org/nsp#nsp",
         "type" : "iri"
       } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "http://www.normansicily.org/nsp",
-        "type" : "label"
-      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "0.1",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://www.normansicily.org/nsp",
         "type" : "label"
       } ],
       "title" : [ {

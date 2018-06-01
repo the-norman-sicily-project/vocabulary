@@ -530,10 +530,6 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://www.normansicily.org/nsp#reignOfEarliestAttestestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://www.normansicily.org/nsp#reignOfEarliestAttestestation> <http://www.w3.org/2000/01/rdf-schema#label> "Reign of the earliest attestation"@en .
 # 
-_:genid31 <http://xmlns.com/foaf/0.1/homepage> <http://www.normansicily.org> .
-_:genid31 <http://xmlns.com/foaf/0.1/organization> "The Norman Sicily Project" .
-_:genid32 <http://xmlns.com/foaf/0.1/mbox> <mailto:joephayes@gmail.com> .
-_:genid32 <http://xmlns.com/foaf/0.1/name> "Joseph Hayes" .
 # 
 # 
 # #################################################################
