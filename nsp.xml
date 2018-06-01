@@ -12,7 +12,7 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://www.normansicily.org/nsp">
-        <owl:versionIRI rdf:resource="http://www.normansicily.org/nsp/0.1"/>
+        <owl:versionIRI rdf:resource="http://www.normansicily.org/nsp/0.2"/>
         <dc:creator rdf:resource="http://www.normansicily.org/nsp#hayesd"/>
         <dc:creator rdf:resource="http://www.normansicily.org/nsp#joephayes"/>
         <dc:description xml:lang="en">Vocabulary for describing the places, locations and names of Norman Sicily that are available through The Norman Sicily Project site, http://www.normansicily.org/</dc:description>
@@ -20,12 +20,13 @@
         <dc:publisher rdf:resource="http://www.normansicily.org/nsp#nsp"/>
         <dc:title xml:lang="en">The Norman Sicily Project Vocabulary</dc:title>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-05-30</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-06-01</terms:modified>
         <vann:changes rdf:resource="https://github.com/the-norman-sicily-project/vocabulary/commits/master"/>
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nsp</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.normansicily.org/nsp</vann:preferredNamespaceUri>
         <rdfs:seeAlso rdf:resource="http://www.normansicily.org"/>
-        <owl:priorVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></owl:priorVersion>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
+        <owl:priorVersion rdf:resource="http://www.normansicily.org/nsp/0.1"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -686,7 +687,9 @@
     <!-- http://www.normansicily.org/nsp#Location -->
 
 
-    <owl:Class rdf:about="http://www.normansicily.org/nsp#Location"/>
+    <owl:Class rdf:about="http://www.normansicily.org/nsp#Location">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
     
 
 
@@ -702,14 +705,18 @@
     <!-- http://www.normansicily.org/nsp#Name -->
 
 
-    <owl:Class rdf:about="http://www.normansicily.org/nsp#Name"/>
+    <owl:Class rdf:about="http://www.normansicily.org/nsp#Name">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
     
 
 
     <!-- http://www.normansicily.org/nsp#Place -->
 
 
-    <owl:Class rdf:about="http://www.normansicily.org/nsp#Place"/>
+    <owl:Class rdf:about="http://www.normansicily.org/nsp#Place">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
     
 
 
@@ -845,6 +852,18 @@
     
 
 
+    <!-- http://www.normansicily.org/nsp#hayesd -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.normansicily.org/nsp#hayesd">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:homepage rdf:resource="http://www.thehayesweb.org/dhayes"/>
+        <foaf:mbox rdf:resource="mailto:hayesd@montclair.edu"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dawn Marie Hayes</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.normansicily.org/nsp#isFounderOf -->
 
 
@@ -899,6 +918,17 @@
     
 
 
+    <!-- http://www.normansicily.org/nsp#joephayes -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.normansicily.org/nsp#joephayes">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:mbox rdf:resource="mailto:joephayes@gmail.com"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joseph Hayes</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.normansicily.org/nsp#locationCategory -->
 
 
@@ -922,6 +952,17 @@
 
     <owl:NamedIndividual rdf:about="http://www.normansicily.org/nsp#minEarliestAttestation">
         <rdfs:label xml:lang="en">Latest Year of Earliest Attestation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.normansicily.org/nsp#nsp -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.normansicily.org/nsp#nsp">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+        <foaf:homepage rdf:resource="http://www.normansicily.org/"/>
+        <foaf:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Norman Sicily Project</foaf:organization>
     </owl:NamedIndividual>
     
 
@@ -985,40 +1026,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.normansicily.org/nsp#wasIn">
         <rdfs:label xml:lang="en">was in</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.normansicily.org/nsp/hayesd -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.normansicily.org/nsp/hayesd">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <foaf:homepage rdf:resource="http://www.thehayesweb.org/dhayes"/>
-        <foaf:mbox rdf:resource="mailto:hayesd@montclair.edu"/>
-        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dawn Marie Hayes</foaf:name>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.normansicily.org/nsp/joephayes -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.normansicily.org/nsp/joephayes">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <foaf:mbox rdf:resource="mailto:joephayes@gmail.com"/>
-        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joseph Hayes</foaf:name>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.normansicily.org/nsp/nsp -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.normansicily.org/nsp/nsp">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
-        <foaf:homepage rdf:resource="http://www.normansicily.org/"/>
-        <foaf:organization rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Norman Sicily Project</foaf:organization>
     </owl:NamedIndividual>
     
 
@@ -1106,10 +1113,12 @@
         <rdfs:isDefinedBy rdf:resource="http://www.normansicily.org/nsp#"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.normansicily.org/nsp#isPreferred">
+        <rdfs:comment xml:lang="en">If true, then denotes the preferred name of a place</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.normansicily.org/nsp#"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.normansicily.org/nsp#locationCategory">
         <rdfs:isDefinedBy rdf:resource="http://www.normansicily.org/nsp#"/>
+        <rdfs:seeAlso rdf:resource="https://pleiades.stoa.org/vocabularies/location-types"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.normansicily.org/nsp#maxEarliestAttestation">
         <rdfs:comment xml:lang="en">The earliest year an attestation could have been made</rdfs:comment>

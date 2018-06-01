@@ -1,13 +1,13 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-<http://www.normansicily.org/nsp/0.1> a prov:Entity;
+<http://www.normansicily.org/nsp/0.2> a prov:Entity;
 	 dc:title "The Norman Sicily Project Vocabulary";
-	 prov:wasAttributedTo <http://www.normansicily.org/nsp/hayesd>;
-	 dc:creator <http://www.normansicily.org/nsp/hayesd>;
-	 prov:wasAttributedTo <http://www.normansicily.org/nsp/joephayes>;
-	 dc:creator <http://www.normansicily.org/nsp/joephayes>;
+	 prov:wasAttributedTo <http://www.normansicily.org/nsp#hayesd>;
+	 dc:creator <http://www.normansicily.org/nsp#hayesd>;
+	 prov:wasAttributedTo <http://www.normansicily.org/nsp#joephayes>;
+	 dc:creator <http://www.normansicily.org/nsp#joephayes>;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
-	 prov:specializationOf <http://www.normansicily.org/nsp>;
-	 prov:wasGeneratedAt "2018-05-30";
+	 prov:wasRevisionOf <http://www.normansicily.org/nsp/0.1>;
+	 prov:wasGeneratedAt "2018-06-01";
 .

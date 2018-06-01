@@ -7,7 +7,7 @@
       "en" : "The Norman Sicily Project Vocabulary"
     },
     "iri" : "http://www.normansicily.org/nsp",
-    "version" : "0.1",
+    "version" : "0.2",
     "author" : [ "http://www.normansicily.org/nsp#hayesd", "http://www.normansicily.org/nsp#joephayes" ],
     "description" : {
       "en" : "Vocabulary for describing the places, locations and names of Norman Sicily that are available through The Norman Sicily Project site, http://www.normansicily.org/"
@@ -16,8 +16,8 @@
       "priorVersion" : [ {
         "identifier" : "priorVersion",
         "language" : "undefined",
-        "value" : "",
-        "type" : "label"
+        "value" : "http://www.normansicily.org/nsp/0.1",
+        "type" : "iri"
       } ],
       "license" : [ {
         "identifier" : "license",
@@ -54,6 +54,12 @@
         "value" : "https://github.com/the-norman-sicily-project/vocabulary/commits/master",
         "type" : "iri"
       } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2018-06-01",
+        "type" : "label"
+      } ],
       "publisher" : [ {
         "identifier" : "publisher",
         "language" : "undefined",
@@ -63,7 +69,7 @@
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
-        "value" : "0.1",
+        "value" : "0.2",
         "type" : "label"
       } ],
       "preferredNamespaceUri" : [ {
@@ -88,7 +94,7 @@
   },
   "namespace" : [ ],
   "metrics" : {
-    "classCount" : 11,
+    "classCount" : 12,
     "objectPropertyCount" : 11,
     "datatypePropertyCount" : 21,
     "individualCount" : 32
@@ -367,7 +373,7 @@
       "IRI-based" : "Project"
     },
     "individuals" : [ {
-      "iri" : "http://www.normansicily.org/nsp/nsp",
+      "iri" : "http://www.normansicily.org/nsp#nsp",
       "baseIri" : "http://www.normansicily.org/nsp",
       "annotations" : {
         "organization" : [ {
@@ -418,7 +424,7 @@
       "IRI-based" : "Person"
     },
     "individuals" : [ {
-      "iri" : "http://www.normansicily.org/nsp/joephayes",
+      "iri" : "http://www.normansicily.org/nsp#joephayes",
       "baseIri" : "http://www.normansicily.org/nsp",
       "annotations" : {
         "name" : [ {
@@ -438,7 +444,7 @@
         "IRI-based" : "joephayes"
       }
     }, {
-      "iri" : "http://www.normansicily.org/nsp/hayesd",
+      "iri" : "http://www.normansicily.org/nsp#hayesd",
       "baseIri" : "http://www.normansicily.org/nsp",
       "annotations" : {
         "name" : [ {
@@ -511,12 +517,12 @@
   }, {
     "instances" : 0,
     "union" : [ "30", "0" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "59"
   }, {
     "instances" : 0,
     "union" : [ "4", "0" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "60"
   }, {
     "iri" : "http://purl.org/dc/terms/RFC5646",
@@ -563,12 +569,12 @@
   }, {
     "instances" : 0,
     "union" : [ "30", "0" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "3"
   }, {
     "instances" : 0,
     "union" : [ "4", "0" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "53"
   }, {
     "iri" : "http://www.normansicily.org/nsp#Location",
@@ -981,6 +987,12 @@
         "language" : "undefined",
         "value" : "http://www.normansicily.org/nsp#",
         "type" : "iri"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://pleiades.stoa.org/vocabularies/location-types",
+        "type" : "iri"
       } ]
     },
     "label" : {
@@ -1244,6 +1256,9 @@
       "IRI-based" : "isPreferred"
     },
     "domain" : "30",
+    "comment" : {
+      "en" : "If true, then denotes the preferred name of a place"
+    },
     "attributes" : [ "datatype" ],
     "id" : "70"
   }, {

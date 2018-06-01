@@ -1,5 +1,5 @@
 <http://www.normansicily.org/nsp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://www.normansicily.org/nsp> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.normansicily.org/nsp/0.1> .
+<http://www.normansicily.org/nsp> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.normansicily.org/nsp/0.2> .
 <http://www.normansicily.org/nsp> <http://purl.org/dc/elements/1.1/creator> <http://www.normansicily.org/nsp#hayesd> .
 <http://www.normansicily.org/nsp> <http://purl.org/dc/elements/1.1/creator> <http://www.normansicily.org/nsp#joephayes> .
 <http://www.normansicily.org/nsp> <http://purl.org/dc/elements/1.1/description> "Vocabulary for describing the places, locations and names of Norman Sicily that are available through The Norman Sicily Project site, http://www.normansicily.org/"@en .
@@ -7,12 +7,13 @@
 <http://www.normansicily.org/nsp> <http://purl.org/dc/elements/1.1/publisher> <http://www.normansicily.org/nsp#nsp> .
 <http://www.normansicily.org/nsp> <http://purl.org/dc/elements/1.1/title> "The Norman Sicily Project Vocabulary"@en .
 <http://www.normansicily.org/nsp> <http://purl.org/dc/terms/created> "2018-05-30" .
+<http://www.normansicily.org/nsp> <http://purl.org/dc/terms/modified> "2018-06-01" .
 <http://www.normansicily.org/nsp> <http://purl.org/vocab/vann/changes> <https://github.com/the-norman-sicily-project/vocabulary/commits/master> .
 <http://www.normansicily.org/nsp> <http://purl.org/vocab/vann/preferredNamespacePrefix> "nsp" .
 <http://www.normansicily.org/nsp> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.normansicily.org/nsp" .
 <http://www.normansicily.org/nsp> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.normansicily.org> .
-<http://www.normansicily.org/nsp> <http://www.w3.org/2002/07/owl#priorVersion> "" .
-<http://www.normansicily.org/nsp> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.normansicily.org/nsp> <http://www.w3.org/2002/07/owl#priorVersion> <http://www.normansicily.org/nsp/0.1> .
+<http://www.normansicily.org/nsp> <http://www.w3.org/2002/07/owl#versionInfo> "0.2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # 
 # #################################################################
@@ -366,6 +367,7 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://www.normansicily.org/nsp#Location
 <http://www.normansicily.org/nsp#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.normansicily.org/nsp#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 # 
 # http://www.normansicily.org/nsp#Monastery
 <http://www.normansicily.org/nsp#Monastery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -373,9 +375,11 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://www.normansicily.org/nsp#Name
 <http://www.normansicily.org/nsp#Name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.normansicily.org/nsp#Name> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 # 
 # http://www.normansicily.org/nsp#Place
 <http://www.normansicily.org/nsp#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.normansicily.org/nsp#Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 # 
 # http://xmlns.com/foaf/0.1/Agent
 <http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -439,6 +443,13 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://www.normansicily.org/nsp#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.normansicily.org/nsp#hasName> <http://www.w3.org/2000/01/rdf-schema#label> "was named"@en .
 # 
+# http://www.normansicily.org/nsp#hayesd
+<http://www.normansicily.org/nsp#hayesd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#hayesd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.normansicily.org/nsp#hayesd> <http://xmlns.com/foaf/0.1/homepage> <http://www.thehayesweb.org/dhayes> .
+<http://www.normansicily.org/nsp#hayesd> <http://xmlns.com/foaf/0.1/mbox> <mailto:hayesd@montclair.edu> .
+<http://www.normansicily.org/nsp#hayesd> <http://xmlns.com/foaf/0.1/name> "Dawn Marie Hayes" .
+# 
 # http://www.normansicily.org/nsp#isFounderOf
 <http://www.normansicily.org/nsp#isFounderOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.normansicily.org/nsp#isFounderOf> <http://www.w3.org/2000/01/rdf-schema#label> "founded"@en .
@@ -463,6 +474,12 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://www.normansicily.org/nsp#isPreferred> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.normansicily.org/nsp#isPreferred> <http://www.w3.org/2000/01/rdf-schema#label> "Preferred"@en .
 # 
+# http://www.normansicily.org/nsp#joephayes
+<http://www.normansicily.org/nsp#joephayes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#joephayes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.normansicily.org/nsp#joephayes> <http://xmlns.com/foaf/0.1/mbox> <mailto:joephayes@gmail.com> .
+<http://www.normansicily.org/nsp#joephayes> <http://xmlns.com/foaf/0.1/name> "Joseph Hayes" .
+# 
 # http://www.normansicily.org/nsp#locationCategory
 <http://www.normansicily.org/nsp#locationCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.normansicily.org/nsp#locationCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Location Category"@en .
@@ -474,6 +491,12 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://www.normansicily.org/nsp#minEarliestAttestation
 <http://www.normansicily.org/nsp#minEarliestAttestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.normansicily.org/nsp#minEarliestAttestation> <http://www.w3.org/2000/01/rdf-schema#label> "Latest Year of Earliest Attestation"@en .
+# 
+# http://www.normansicily.org/nsp#nsp
+<http://www.normansicily.org/nsp#nsp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.normansicily.org/nsp#nsp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Project> .
+<http://www.normansicily.org/nsp#nsp> <http://xmlns.com/foaf/0.1/homepage> <http://www.normansicily.org/> .
+<http://www.normansicily.org/nsp#nsp> <http://xmlns.com/foaf/0.1/organization> "The Norman Sicily Project" .
 # 
 # http://www.normansicily.org/nsp#order
 <http://www.normansicily.org/nsp#order> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -502,25 +525,6 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://www.normansicily.org/nsp#wasIn
 <http://www.normansicily.org/nsp#wasIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.normansicily.org/nsp#wasIn> <http://www.w3.org/2000/01/rdf-schema#label> "was in"@en .
-# 
-# http://www.normansicily.org/nsp/hayesd
-<http://www.normansicily.org/nsp/hayesd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.normansicily.org/nsp/hayesd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
-<http://www.normansicily.org/nsp/hayesd> <http://xmlns.com/foaf/0.1/homepage> <http://www.thehayesweb.org/dhayes> .
-<http://www.normansicily.org/nsp/hayesd> <http://xmlns.com/foaf/0.1/mbox> <mailto:hayesd@montclair.edu> .
-<http://www.normansicily.org/nsp/hayesd> <http://xmlns.com/foaf/0.1/name> "Dawn Marie Hayes" .
-# 
-# http://www.normansicily.org/nsp/joephayes
-<http://www.normansicily.org/nsp/joephayes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.normansicily.org/nsp/joephayes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
-<http://www.normansicily.org/nsp/joephayes> <http://xmlns.com/foaf/0.1/mbox> <mailto:joephayes@gmail.com> .
-<http://www.normansicily.org/nsp/joephayes> <http://xmlns.com/foaf/0.1/name> "Joseph Hayes" .
-# 
-# http://www.normansicily.org/nsp/nsp
-<http://www.normansicily.org/nsp/nsp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.normansicily.org/nsp/nsp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Project> .
-<http://www.normansicily.org/nsp/nsp> <http://xmlns.com/foaf/0.1/homepage> <http://www.normansicily.org/> .
-<http://www.normansicily.org/nsp/nsp> <http://xmlns.com/foaf/0.1/organization> "The Norman Sicily Project" .
 # 
 # http://www.normansicily.org/nsp/rankAtFoundaion
 <http://www.normansicily.org/nsp/rankAtFoundaion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -578,9 +582,11 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 <http://www.normansicily.org/nsp#isNear> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
 # 
+<http://www.normansicily.org/nsp#isPreferred> <http://www.w3.org/2000/01/rdf-schema#comment> "If true, then denotes the preferred name of a place"@en .
 <http://www.normansicily.org/nsp#isPreferred> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
 # 
 <http://www.normansicily.org/nsp#locationCategory> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .
+<http://www.normansicily.org/nsp#locationCategory> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://pleiades.stoa.org/vocabularies/location-types> .
 # 
 <http://www.normansicily.org/nsp#maxEarliestAttestation> <http://www.w3.org/2000/01/rdf-schema#comment> "The earliest year an attestation could have been made"@en .
 <http://www.normansicily.org/nsp#maxEarliestAttestation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.normansicily.org/nsp#> .

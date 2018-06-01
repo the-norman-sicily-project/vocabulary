@@ -4,7 +4,8 @@
    prompt
    cd www/norman_sicily_static
    put ".htaccess"
-   cd vocab
+   mkdir nsp
+   cd nsp
    put 406.html
    put index-en.html
    put nsp.json
@@ -14,6 +15,13 @@
    mkdir 0.1
    cd 0.1
    lcd 0.1
+   put ".htaccess"
+   put nsp.owl
+   cd ..
+   lcd ..
+   mkdir 0.2
+   cd 0.2
+   lcd 0.2
    put ".htaccess"
    put nsp.owl
    cd ..

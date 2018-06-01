@@ -3,7 +3,7 @@ Options -MultiViews
 AddType application/rdf+xml .owl
 
 RewriteEngine On
-RewriteBase /nsp/0.1
+RewriteBase /nsp/0.2
 
 # Default response
 RewriteRule ^$ nsp.owl

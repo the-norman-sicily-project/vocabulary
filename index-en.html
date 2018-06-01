@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"http://www.normansicily.org/nsp","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://www.normansicily.org/nsp","name":"The Norman Sicily Project Vocabulary", "headline":"Document describing the ontology http://www.normansicily.org/nsp", "datePublished":"2018-05-30", "version":"0.1", "license":"http://creativecommons.org/licenses/by-sa/4.0/", "author":[{"@type":"Person","name":"http://www.normansicily.org/nsp/hayesd","url":"http://www.normansicily.org/nsp/hayesd"},{"@type":"Person","name":"http://www.normansicily.org/nsp/joephayes","url":"http://www.normansicily.org/nsp/joephayes"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"http://www.normansicily.org/nsp","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://www.normansicily.org/nsp","name":"The Norman Sicily Project Vocabulary", "headline":"Vocabulary for describing the places, locations and names of Norman Sicily that are available through The Norman Sicily Project site, http://www.normansicily.org/", "datePublished":"2018-06-01", "version":"0.2", "author":[{"@type":"Person","name":"http://www.normansicily.org/nsp#hayesd","url":"http://www.normansicily.org/nsp#hayesd"},{"@type":"Person","name":"http://www.normansicily.org/nsp#joephayes","url":"http://www.normansicily.org/nsp#joephayes"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -49,6 +49,7 @@ function loadTOC(){
       $("#overview").load("sections/overview-en.html"); 
       $("#description").load("sections/description-en.html"); 
       $("#references").load("sections/references-en.html"); 
+      $("#changelog").load("sections/changelog-en.html"); 
       $("#crossref").load("sections/crossref-en.html", null, loadHash); 
     });
     </script> 
@@ -59,16 +60,18 @@ function loadTOC(){
 <div class="head">
 <div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
 <h1>The Norman Sicily Project Vocabulary</h1>
-<h2>Release  2018-05-30</h2>
+<h2>Release  2018-06-01</h2>
 
 
 <dl>
 <dt>This version:</dt>
+<dd><a href="http://www.normansicily.org/nsp/0.2">http://www.normansicily.org/nsp/0.2</a></dd>
+<dt>Previous version:</dt>
 <dd><a href="http://www.normansicily.org/nsp/0.1">http://www.normansicily.org/nsp/0.1</a></dd>
 <dt>Latest version:</dt>
 <dd><a href="http://www.normansicily.org/nsp">http://www.normansicily.org/nsp</a></dd>
 <dt>Revision:</dt>
-<dd>0.1</dd>
+<dd>0.2</dd>
 <dt>Authors:</dt>
 <dd><a href="http://www.normansicily.org/nsp#hayesd">http://www.normansicily.org/nsp#hayesd</a></dd><dd><a href="http://www.normansicily.org/nsp#joephayes">http://www.normansicily.org/nsp#joephayes</a></dd>
 
@@ -93,12 +96,15 @@ function loadTOC(){
      <div id="description"></div>
      <div id="crossref"></div>
      <div id="references"></div>
+     <div id="changelog"></div>
 <div id="acknowledgements">
 <h2 id="ack" class="list">Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <p>
 The authors would like to thank <a href="https://pleiades.stoa.org/">The Pleiades Project</a>. This vocabulary is derived from the <a href="https://pleiades.stoa.org/docs/partners/pleiades-rdf-vocabulary">Pleiades RDF Vocabulary</a>, which is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/us/">Creative Commons Attribution 3.0 License (cc-by)</a>.
-
-The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</p>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.
+</p>
 </div>
 
 </div>

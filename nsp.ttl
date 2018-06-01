@@ -7,7 +7,7 @@
 @base <http://www.normansicily.org/nsp> .
 
 <http://www.normansicily.org/nsp> rdf:type owl:Ontology ;
-                                   owl:versionIRI <http://www.normansicily.org/nsp/0.1> ;
+                                   owl:versionIRI <http://www.normansicily.org/nsp/0.2> ;
                                    <http://purl.org/dc/elements/1.1/creator> :hayesd ,
                                                                              :joephayes ;
                                    <http://purl.org/dc/elements/1.1/description> "Vocabulary for describing the places, locations and names of Norman Sicily that are available through The Norman Sicily Project site, http://www.normansicily.org/"@en ;
@@ -15,12 +15,13 @@
                                    <http://purl.org/dc/elements/1.1/publisher> :nsp ;
                                    <http://purl.org/dc/elements/1.1/title> "The Norman Sicily Project Vocabulary"@en ;
                                    <http://purl.org/dc/terms/created> "2018-05-30"^^xsd:string ;
+                                   <http://purl.org/dc/terms/modified> "2018-06-01"^^xsd:string ;
                                    <http://purl.org/vocab/vann/changes> <https://github.com/the-norman-sicily-project/vocabulary/commits/master> ;
                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "nsp"^^xsd:string ;
                                    <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.normansicily.org/nsp"^^xsd:string ;
                                    rdfs:seeAlso <http://www.normansicily.org> ;
-                                   owl:priorVersion ""^^xsd:string ;
-                                   owl:versionInfo 0.1 .
+                                   owl:priorVersion <http://www.normansicily.org/nsp/0.1> ;
+                                   owl:versionInfo 0.2 .
 
 #################################################################
 #    Annotation properties
@@ -385,7 +386,8 @@ rdfs:label rdf:type owl:DatatypeProperty ;
 
 
 ###  http://www.normansicily.org/nsp#Location
-:Location rdf:type owl:Class .
+:Location rdf:type owl:Class ;
+          rdfs:subClassOf owl:Thing .
 
 
 ###  http://www.normansicily.org/nsp#Monastery
@@ -394,11 +396,13 @@ rdfs:label rdf:type owl:DatatypeProperty ;
 
 
 ###  http://www.normansicily.org/nsp#Name
-:Name rdf:type owl:Class .
+:Name rdf:type owl:Class ;
+      rdfs:subClassOf owl:Thing .
 
 
 ###  http://www.normansicily.org/nsp#Place
-:Place rdf:type owl:Class .
+:Place rdf:type owl:Class ;
+       rdfs:subClassOf owl:Thing .
 
 
 ###  http://xmlns.com/foaf/0.1/Agent
@@ -472,6 +476,14 @@ rdfs:label rdf:type owl:DatatypeProperty ;
          rdfs:label "was named"@en .
 
 
+###  http://www.normansicily.org/nsp#hayesd
+:hayesd rdf:type owl:NamedIndividual ,
+                 <http://xmlns.com/foaf/0.1/Person> ;
+        <http://xmlns.com/foaf/0.1/homepage> <http://www.thehayesweb.org/dhayes> ;
+        <http://xmlns.com/foaf/0.1/mbox> <mailto:hayesd@montclair.edu> ;
+        <http://xmlns.com/foaf/0.1/name> "Dawn Marie Hayes"^^xsd:string .
+
+
 ###  http://www.normansicily.org/nsp#isFounderOf
 :isFounderOf rdf:type owl:NamedIndividual ;
              rdfs:label "founded"@en .
@@ -502,6 +514,13 @@ rdfs:label rdf:type owl:DatatypeProperty ;
              rdfs:label "Preferred"@en .
 
 
+###  http://www.normansicily.org/nsp#joephayes
+:joephayes rdf:type owl:NamedIndividual ,
+                    <http://xmlns.com/foaf/0.1/Person> ;
+           <http://xmlns.com/foaf/0.1/mbox> <mailto:joephayes@gmail.com> ;
+           <http://xmlns.com/foaf/0.1/name> "Joseph Hayes"^^xsd:string .
+
+
 ###  http://www.normansicily.org/nsp#locationCategory
 :locationCategory rdf:type owl:NamedIndividual ;
                   rdfs:label "Location Category"@en .
@@ -515,6 +534,13 @@ rdfs:label rdf:type owl:DatatypeProperty ;
 ###  http://www.normansicily.org/nsp#minEarliestAttestation
 :minEarliestAttestation rdf:type owl:NamedIndividual ;
                         rdfs:label "Latest Year of Earliest Attestation"@en .
+
+
+###  http://www.normansicily.org/nsp#nsp
+:nsp rdf:type owl:NamedIndividual ,
+              <http://xmlns.com/foaf/0.1/Project> ;
+     <http://xmlns.com/foaf/0.1/homepage> <http://www.normansicily.org/> ;
+     <http://xmlns.com/foaf/0.1/organization> "The Norman Sicily Project"^^xsd:string .
 
 
 ###  http://www.normansicily.org/nsp#order
@@ -550,28 +576,6 @@ rdfs:label rdf:type owl:DatatypeProperty ;
 ###  http://www.normansicily.org/nsp#wasIn
 :wasIn rdf:type owl:NamedIndividual ;
        rdfs:label "was in"@en .
-
-
-###  http://www.normansicily.org/nsp/hayesd
-<http://www.normansicily.org/nsp/hayesd> rdf:type owl:NamedIndividual ,
-                                                  <http://xmlns.com/foaf/0.1/Person> ;
-                                         <http://xmlns.com/foaf/0.1/homepage> <http://www.thehayesweb.org/dhayes> ;
-                                         <http://xmlns.com/foaf/0.1/mbox> <mailto:hayesd@montclair.edu> ;
-                                         <http://xmlns.com/foaf/0.1/name> "Dawn Marie Hayes"^^xsd:string .
-
-
-###  http://www.normansicily.org/nsp/joephayes
-<http://www.normansicily.org/nsp/joephayes> rdf:type owl:NamedIndividual ,
-                                                     <http://xmlns.com/foaf/0.1/Person> ;
-                                            <http://xmlns.com/foaf/0.1/mbox> <mailto:joephayes@gmail.com> ;
-                                            <http://xmlns.com/foaf/0.1/name> "Joseph Hayes"^^xsd:string .
-
-
-###  http://www.normansicily.org/nsp/nsp
-<http://www.normansicily.org/nsp/nsp> rdf:type owl:NamedIndividual ,
-                                               <http://xmlns.com/foaf/0.1/Project> ;
-                                      <http://xmlns.com/foaf/0.1/homepage> <http://www.normansicily.org/> ;
-                                      <http://xmlns.com/foaf/0.1/organization> "The Norman Sicily Project"^^xsd:string .
 
 
 ###  http://www.normansicily.org/nsp/rankAtFoundaion
@@ -643,10 +647,12 @@ rdfs:label rdf:type owl:DatatypeProperty ;
 :isNear rdfs:isDefinedBy : .
 
 
-:isPreferred rdfs:isDefinedBy : .
+:isPreferred rdfs:comment "If true, then denotes the preferred name of a place"@en ;
+             rdfs:isDefinedBy : .
 
 
-:locationCategory rdfs:isDefinedBy : .
+:locationCategory rdfs:isDefinedBy : ;
+                  rdfs:seeAlso <https://pleiades.stoa.org/vocabularies/location-types> .
 
 
 :maxEarliestAttestation rdfs:comment "The earliest year an attestation could have been made"@en ;

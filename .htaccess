@@ -7,7 +7,7 @@ AddType application/n-triples .n3
 AddType application/ld+json .json
 
 RewriteEngine On
-RewriteBase /vocab
+RewriteBase /nsp
 
 RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml.*(text/html|application/xhtml\+xml)
 RewriteCond %{HTTP_ACCEPT} text/html [OR]
