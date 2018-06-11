@@ -7,7 +7,7 @@
 @base <http://www.normansicily.org/nsp> .
 
 <http://www.normansicily.org/nsp> rdf:type owl:Ontology ;
-                                   owl:versionIRI <http://www.normansicily.org/nsp/0.2> ;
+                                   owl:versionIRI <http://www.normansicily.org/nsp/0.3> ;
                                    <http://purl.org/dc/elements/1.1/creator> :hayesd ,
                                                                              :joephayes ;
                                    <http://purl.org/dc/elements/1.1/description> "Vocabulary for describing the places, locations and names of Norman Sicily that are available through The Norman Sicily Project site, http://www.normansicily.org/"@en ;
@@ -15,13 +15,13 @@
                                    <http://purl.org/dc/elements/1.1/publisher> :nsp ;
                                    <http://purl.org/dc/elements/1.1/title> "The Norman Sicily Project Vocabulary"@en ;
                                    <http://purl.org/dc/terms/created> "2018-05-30"^^xsd:string ;
-                                   <http://purl.org/dc/terms/modified> "2018-06-01"^^xsd:string ;
+                                   <http://purl.org/dc/terms/modified> "2018-06-10"^^xsd:string ;
                                    <http://purl.org/vocab/vann/changes> <https://github.com/the-norman-sicily-project/vocabulary/commits/master> ;
                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "nsp"^^xsd:string ;
                                    <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.normansicily.org/nsp"^^xsd:string ;
                                    rdfs:seeAlso <http://www.normansicily.org> ;
-                                   owl:priorVersion <http://www.normansicily.org/nsp/0.1> ;
-                                   owl:versionInfo 0.2 .
+                                   owl:priorVersion <http://www.normansicily.org/nsp/0.2> ;
+                                   owl:versionInfo 0.3 .
 
 #################################################################
 #    Annotation properties
@@ -56,7 +56,8 @@
 
 
 ###  http://www.normansicily.org/nsp#recordStatus
-:recordStatus rdf:type owl:AnnotationProperty .
+:recordStatus rdf:type owl:AnnotationProperty ;
+              rdfs:isDefinedBy <http://www.normansicly.org/nsp#> .
 
 
 ###  http://xmlns.com/foaf/0.1/homepage
@@ -89,6 +90,10 @@
 <http://purl.org/dc/terms/RFC5646> rdf:type rdfs:Datatype .
 
 
+###  http://schema.org/Text
+<http://schema.org/Text> rdf:type rdfs:Datatype .
+
+
 ###  http://www.w3.org/2001/XMLSchema#date
 xsd:date rdf:type rdfs:Datatype .
 
@@ -105,14 +110,27 @@ xsd:gYear rdf:type rdfs:Datatype .
 :contains rdf:type owl:ObjectProperty ;
           owl:inverseOf :isIn ;
           rdfs:domain <http://dbpedia.org/ontology/Province> ;
-          rdfs:range :Location .
+          rdfs:range :Location ;
+          rdfs:comment "A province (administrative grouping) contains a location"@en ;
+          rdfs:isDefinedBy : .
+
+
+###  http://www.normansicily.org/nsp#hasChildren
+:hasChildren rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isChildOf ;
+             rdfs:domain :Monastery ;
+             rdfs:range :Monastery ;
+             rdfs:comment "A Monastery has one or more Monasteries subject to it"@en ;
+             rdfs:isDefinedBy : .
 
 
 ###  http://www.normansicily.org/nsp#hasFounder
 :hasFounder rdf:type owl:ObjectProperty ;
             owl:inverseOf :isFounderOf ;
             rdfs:domain :Place ;
-            rdfs:range :Founder .
+            rdfs:range :Founder ;
+            rdfs:comment "A Place has one or more founders"@en ;
+            rdfs:isDefinedBy : .
 
 
 ###  http://www.normansicily.org/nsp#hasLocation
@@ -123,7 +141,9 @@ xsd:gYear rdf:type rdfs:Datatype .
                                          :Place
                                        )
                          ] ;
-             rdfs:range :Location .
+             rdfs:range :Location ;
+             rdfs:comment "A Name or a Place has a known Location"@en ;
+             rdfs:isDefinedBy : .
 
 
 ###  http://www.normansicily.org/nsp#hasName
@@ -134,19 +154,42 @@ xsd:gYear rdf:type rdfs:Datatype .
                                      :Place
                                    )
                      ] ;
-         rdfs:range :Name .
+         rdfs:range :Name ;
+         rdfs:comment "A Location or Place has Name"@en ;
+         rdfs:isDefinedBy : .
+
+
+###  http://www.normansicily.org/nsp#hasParent
+:hasParent rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isParentOf ;
+           rdfs:domain :Monastery ;
+           rdfs:range :Monastery ;
+           rdfs:comment "A Monastery has a Motherhouse"@en ;
+           rdfs:isDefinedBy : .
+
+
+###  http://www.normansicily.org/nsp#isChildOf
+:isChildOf rdf:type owl:ObjectProperty ;
+           rdfs:domain :Monastery ;
+           rdfs:range :Monastery ;
+           rdfs:comment "A Monastery is subject to another Monastery"@en ;
+           rdfs:isDefinedBy : .
 
 
 ###  http://www.normansicily.org/nsp#isFounderOf
 :isFounderOf rdf:type owl:ObjectProperty ;
              rdfs:domain :Founder ;
-             rdfs:range :Place .
+             rdfs:range :Place ;
+             rdfs:comment "A Founder (Person) founded a Place"@en ;
+             rdfs:isDefinedBy : .
 
 
 ###  http://www.normansicily.org/nsp#isIn
 :isIn rdf:type owl:ObjectProperty ;
       rdfs:domain :Location ;
-      rdfs:range <http://dbpedia.org/ontology/Province> .
+      rdfs:range <http://dbpedia.org/ontology/Province> ;
+      rdfs:comment "A location is contained in a province (administrative grouping)"@en ;
+      rdfs:isDefinedBy : .
 
 
 ###  http://www.normansicily.org/nsp#isLocationOf
@@ -156,7 +199,9 @@ xsd:gYear rdf:type rdfs:Datatype .
                            owl:unionOf ( :Name
                                          :Place
                                        )
-                         ] .
+                         ] ;
+              rdfs:comment "A Location is known for a Name or Place"@en ;
+              rdfs:isDefinedBy : .
 
 
 ###  http://www.normansicily.org/nsp#isNameOf
@@ -166,26 +211,42 @@ xsd:gYear rdf:type rdfs:Datatype .
                        owl:unionOf ( :Location
                                      :Place
                                    )
-                     ] .
+                     ] ;
+          rdfs:comment "A Name is known for a Location or Place"@en ;
+          rdfs:isDefinedBy : .
 
 
 ###  http://www.normansicily.org/nsp#isNear
 :isNear rdf:type owl:ObjectProperty ;
         rdfs:domain :Location ;
-        rdfs:range <http://dbpedia.org/ontology/Municipality> .
+        rdfs:range <http://dbpedia.org/ontology/Municipality> ;
+        rdfs:comment "A Location is nearby, or contained in, a Municipality"@en ;
+        rdfs:isDefinedBy : .
+
+
+###  http://www.normansicily.org/nsp#isParentOf
+:isParentOf rdf:type owl:ObjectProperty ;
+            rdfs:domain :Monastery ;
+            rdfs:range :Monastery ;
+            rdfs:comment "A Monastery is the motherhouse to another Monastery"@en ;
+            rdfs:isDefinedBy : .
 
 
 ###  http://www.normansicily.org/nsp#wasContainedBy
 :wasContainedBy rdf:type owl:ObjectProperty ;
                 owl:inverseOf :wasIn ;
                 rdfs:domain <http://dbpedia.org/ontology/HistoricalProvince> ;
-                rdfs:range :Location .
+                rdfs:range :Location ;
+                rdfs:comment "A historical province contains a Location"@en ;
+                rdfs:isDefinedBy : .
 
 
 ###  http://www.normansicily.org/nsp#wasIn
 :wasIn rdf:type owl:ObjectProperty ;
        rdfs:domain :Location ;
-       rdfs:range <http://dbpedia.org/ontology/HistoricalProvince> .
+       rdfs:range <http://dbpedia.org/ontology/HistoricalProvince> ;
+       rdfs:comment "A Location was contained in a historical province"@en ;
+       rdfs:isDefinedBy : .
 
 
 #################################################################
@@ -200,35 +261,46 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://schema.org/honorificPrefix
 <http://schema.org/honorificPrefix> rdf:type owl:DatatypeProperty ;
-                                    rdfs:domain :Founder .
+                                    rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
+                                    rdfs:range <http://schema.org/Text> .
 
 
 ###  http://www.normansicily.org/nsp#archaeologicalRemains
 :archaeologicalRemains rdf:type owl:DatatypeProperty ;
                        rdfs:domain :Location ;
-                       rdfs:range xsd:string .
+                       rdfs:range rdfs:Literal ;
+                       rdfs:comment "Describes the state of the visible remains at a Location"@en ;
+                       rdfs:isDefinedBy : .
 
 
 ###  http://www.normansicily.org/nsp#dedication
 :dedication rdf:type owl:DatatypeProperty ;
             rdfs:domain :Monastery ;
-            rdfs:range xsd:string .
+            rdfs:range rdfs:Literal ;
+            rdfs:comment "The person or thing to which a place was dedicated"@en ;
+            rdfs:isDefinedBy : .
 
 
 ###  http://www.normansicily.org/nsp#earliestAttestation
-:earliestAttestation rdf:type owl:DatatypeProperty .
+:earliestAttestation rdf:type owl:DatatypeProperty ;
+                     rdfs:comment "The earliest mention of a Place in a source"@en ;
+                     rdfs:isDefinedBy : .
 
 
 ###  http://www.normansicily.org/nsp#isPreferred
-:isPreferred rdf:type owl:DatatypeProperty ;
+:isPreferred rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
              rdfs:domain :Name ;
-             rdfs:range xsd:boolean .
+             rdfs:range xsd:boolean ;
+             rdfs:comment "If true, then it denotes that the name is the preferred one for the Place or Location"@en ;
+             rdfs:isDefinedBy : .
 
 
 ###  http://www.normansicily.org/nsp#locationCategory
 :locationCategory rdf:type owl:DatatypeProperty ;
                   rdfs:domain :Location ;
-                  rdfs:range [ rdf:type rdfs:Datatype ;
+                  rdfs:range rdfs:Literal ,
+                             [ rdf:type rdfs:Datatype ;
                                owl:oneOf [ rdf:type rdf:List ;
                                            rdf:first "Associated Modern"^^xsd:string ;
                                            rdf:rest [ rdf:type rdf:List ;
@@ -242,37 +314,49 @@ xsd:gYear rdf:type rdfs:Datatype .
                                                                ]
                                                     ]
                                          ]
-                             ] .
+                             ] ;
+                  rdfs:isDefinedBy : ;
+                  rdfs:seeAlso <https://pleiades.stoa.org/vocabularies/location-types> .
 
 
 ###  http://www.normansicily.org/nsp#maxEarliestAttestation
 :maxEarliestAttestation rdf:type owl:DatatypeProperty ;
                         rdfs:subPropertyOf :earliestAttestation ;
-                        rdfs:range xsd:gYear .
+                        rdfs:range xsd:gYear ;
+                        rdfs:comment "The latest year an attestation could have been made"@en ;
+                        rdfs:isDefinedBy : .
 
 
 ###  http://www.normansicily.org/nsp#minEarliestAttestation
 :minEarliestAttestation rdf:type owl:DatatypeProperty ;
                         rdfs:subPropertyOf :earliestAttestation ;
-                        rdfs:range xsd:gYear .
+                        rdfs:range xsd:gYear ;
+                        rdfs:comment "The earliest year an attestation could have been made"@en ;
+                        rdfs:isDefinedBy : .
 
 
 ###  http://www.normansicily.org/nsp#order
 :order rdf:type owl:DatatypeProperty ;
        rdfs:domain :Monastery ;
-       rdfs:range xsd:string .
+       rdfs:range rdfs:Literal ;
+       rdfs:comment "An order is a group of person living under a religious rule"@en ;
+       rdfs:isDefinedBy : .
 
 
 ###  http://www.normansicily.org/nsp#placeCategory
 :placeCategory rdf:type owl:DatatypeProperty ;
                rdfs:domain :Place ;
-               rdfs:range xsd:anyURI .
+               rdfs:range xsd:anyURI ;
+               rdfs:comment "Category of the place as per the Getty AAT http://www.getty.edu/research/tools/vocabularies/aat/"@en ;
+               rdfs:isDefinedBy : ;
+               rdfs:seeAlso <http://www.getty.edu/research/tools/vocabularies/aat/> .
 
 
 ###  http://www.normansicily.org/nsp#positionalAccuracyAssessment
 :positionalAccuracyAssessment rdf:type owl:DatatypeProperty ;
                               rdfs:domain :Location ;
-                              rdfs:range [ rdf:type rdfs:Datatype ;
+                              rdfs:range rdfs:Literal ,
+                                         [ rdf:type rdfs:Datatype ;
                                            owl:oneOf [ rdf:type rdf:List ;
                                                        rdf:first "Generic Handheld GPS"^^xsd:string ;
                                                        rdf:rest [ rdf:type rdf:List ;
@@ -283,13 +367,17 @@ xsd:gYear rdf:type rdfs:Datatype .
                                                                            ]
                                                                 ]
                                                      ]
-                                         ] .
+                                         ] ;
+                              rdfs:comment "Assessment of accuracy of place's location"@en ;
+                              rdfs:isDefinedBy : .
 
 
 ###  http://www.normansicily.org/nsp#seismicClassId
-:seismicClassId rdf:type owl:DatatypeProperty ;
+:seismicClassId rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
                 rdfs:domain :Location ;
-                rdfs:range [ rdf:type rdfs:Datatype ;
+                rdfs:range rdfs:Literal ,
+                           [ rdf:type rdfs:Datatype ;
                              owl:oneOf [ rdf:type rdf:List ;
                                          rdf:first 1 ;
                                          rdf:rest [ rdf:type rdf:List ;
@@ -303,25 +391,33 @@ xsd:gYear rdf:type rdfs:Datatype .
                                                              ]
                                                   ]
                                        ]
-                           ] .
+                           ] ;
+                rdfs:comment "Seismic classifcation. See http://www.protezionecivile.gov.it/jcms/en/classificazione.wp"@en ;
+                rdfs:isDefinedBy : ;
+                rdfs:seeAlso <http://www.protezionecivile.gov.it/jcms/en/classificazione.wp> .
 
 
 ###  http://www.normansicily.org/nsp#type
-:type rdf:type owl:DatatypeProperty ;
+:type rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
       rdfs:domain :Place ;
-      rdfs:range xsd:string .
+      rdfs:range rdfs:Literal ;
+      rdfs:comment "The type of a Place"@en ;
+      rdfs:isDefinedBy : .
 
 
-###  http://www.normansicily.org/nsp/rankAtFoundaion
-<http://www.normansicily.org/nsp/rankAtFoundaion> rdf:type owl:DatatypeProperty ;
-                                                  rdfs:domain :Monastery ;
-                                                  rdfs:range xsd:string .
+###  http://www.normansicily.org/nsp/rankAtFoundation
+<http://www.normansicily.org/nsp/rankAtFoundation> rdf:type owl:DatatypeProperty ;
+                                                   rdfs:domain :Monastery ;
+                                                   rdfs:range rdfs:Literal ;
+                                                   rdfs:comment "The rank of the Place when it was founded"@en ;
+                                                   rdfs:isDefinedBy : .
 
 
 ###  http://www.w3.org/2000/01/rdf-schema#label
 rdfs:label rdf:type owl:DatatypeProperty ;
            rdfs:domain :Name ;
-           rdfs:range xsd:string .
+           rdfs:range rdfs:Literal .
 
 
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#alt
@@ -343,7 +439,9 @@ rdfs:label rdf:type owl:DatatypeProperty ;
 
 
 ###  http://xmlns.com/foaf/0.1/gender
-<http://xmlns.com/foaf/0.1/gender> rdf:type owl:DatatypeProperty ;
+<http://xmlns.com/foaf/0.1/gender> rdf:type owl:DatatypeProperty ,
+                                            owl:FunctionalProperty ;
+                                   rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
                                    rdfs:range [ rdf:type rdfs:Datatype ;
                                                 owl:oneOf [ rdf:type rdf:List ;
                                                             rdf:first "Female"^^xsd:string ;
@@ -361,7 +459,9 @@ rdfs:label rdf:type owl:DatatypeProperty ;
 ###  https://www.normansicily.org/nsp#reignOfEarliestAttestestation
 <https://www.normansicily.org/nsp#reignOfEarliestAttestestation> rdf:type owl:DatatypeProperty ;
                                                                  rdfs:domain :Place ;
-                                                                 rdfs:range <http://n2t.net/ark:/99152/p0qwjcd> .
+                                                                 rdfs:range <http://n2t.net/ark:/99152/p0qwjcd> ;
+                                                                 rdfs:comment "The reign during which the earliest attestation occurred"@en ;
+                                                                 rdfs:isDefinedBy <http:///www.normansicily.org/nsp#> .
 
 
 #################################################################
@@ -369,7 +469,8 @@ rdfs:label rdf:type owl:DatatypeProperty ;
 #################################################################
 
 ###  http://dbpedia.org/ontology/HistoricalProvince
-<http://dbpedia.org/ontology/HistoricalProvince> rdf:type owl:Class .
+<http://dbpedia.org/ontology/HistoricalProvince> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://dbpedia.org/ontology/Province> .
 
 
 ###  http://dbpedia.org/ontology/Municipality
@@ -382,27 +483,40 @@ rdfs:label rdf:type owl:DatatypeProperty ;
 
 ###  http://www.normansicily.org/nsp#Founder
 :Founder rdf:type owl:Class ;
-         rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> .
+         rdfs:subClassOf <http://xmlns.com/foaf/0.1/Person> ;
+         owl:disjointWith :Location ,
+                          :Name ,
+                          :Place ;
+         rdfs:comment "A founder or founding member of an organization or place"@en ;
+         rdfs:isDefinedBy : .
 
 
 ###  http://www.normansicily.org/nsp#Location
 :Location rdf:type owl:Class ;
-          rdfs:subClassOf owl:Thing .
+          rdfs:subClassOf owl:Thing ;
+          rdfs:comment "A Location represents a physical location on the Earth's surface"@en ;
+          rdfs:isDefinedBy : .
 
 
 ###  http://www.normansicily.org/nsp#Monastery
 :Monastery rdf:type owl:Class ;
-           rdfs:subClassOf :Place .
+           rdfs:subClassOf :Place ;
+           rdfs:comment "A monastery is the habitation of monks or nuns"@en ;
+           rdfs:isDefinedBy : .
 
 
 ###  http://www.normansicily.org/nsp#Name
 :Name rdf:type owl:Class ;
-      rdfs:subClassOf owl:Thing .
+      rdfs:subClassOf owl:Thing ;
+      rdfs:comment "A Name denotes a word which refers to a Place or a Location"@en ;
+      rdfs:isDefinedBy : .
 
 
 ###  http://www.normansicily.org/nsp#Place
 :Place rdf:type owl:Class ;
-       rdfs:subClassOf owl:Thing .
+       rdfs:subClassOf owl:Thing ;
+       rdfs:comment "A Place refers to a locus for which the Location may or may not be known. It may also have multiple Names."@en ;
+       rdfs:isDefinedBy <http://www.normansiicly.org/nsp#> .
 
 
 ###  http://xmlns.com/foaf/0.1/Agent
@@ -410,7 +524,8 @@ rdfs:label rdf:type owl:DatatypeProperty ;
 
 
 ###  http://xmlns.com/foaf/0.1/Person
-<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> .
 
 
 ###  http://xmlns.com/foaf/0.1/Project
@@ -421,97 +536,12 @@ rdfs:label rdf:type owl:DatatypeProperty ;
 #    Individuals
 #################################################################
 
-###  http://www.normansicily.org/nsp#Location
-:Location rdf:type owl:NamedIndividual ;
-          rdfs:label "Location"@en .
-
-
-###  http://www.normansicily.org/nsp#Monastery
-:Monastery rdf:type owl:NamedIndividual ;
-           rdfs:label "Monastery"@en .
-
-
-###  http://www.normansicily.org/nsp#Name
-:Name rdf:type owl:NamedIndividual ;
-      rdfs:label "Name"@en .
-
-
-###  http://www.normansicily.org/nsp#Place
-:Place rdf:type owl:NamedIndividual ;
-       rdfs:label "Place"@en .
-
-
-###  http://www.normansicily.org/nsp#archaeologicalRemains
-:archaeologicalRemains rdf:type owl:NamedIndividual ;
-                       rdfs:label "Archaeological Remains"@en .
-
-
-###  http://www.normansicily.org/nsp#contains
-:contains rdf:type owl:NamedIndividual ;
-          rdfs:label "contains"@en .
-
-
-###  http://www.normansicily.org/nsp#dedication
-:dedication rdf:type owl:NamedIndividual ;
-            rdfs:label "Dedication"@en .
-
-
-###  http://www.normansicily.org/nsp#earliestAttestation
-:earliestAttestation rdf:type owl:NamedIndividual ;
-                     rdfs:label "Earliest Attestation"@en .
-
-
-###  http://www.normansicily.org/nsp#hasFounder
-:hasFounder rdf:type owl:NamedIndividual ;
-            rdfs:label "was founded by"@en .
-
-
-###  http://www.normansicily.org/nsp#hasLocation
-:hasLocation rdf:type owl:NamedIndividual ;
-             rdfs:label "is located at"@en .
-
-
-###  http://www.normansicily.org/nsp#hasName
-:hasName rdf:type owl:NamedIndividual ;
-         rdfs:label "was named"@en .
-
-
 ###  http://www.normansicily.org/nsp#hayesd
 :hayesd rdf:type owl:NamedIndividual ,
                  <http://xmlns.com/foaf/0.1/Person> ;
         <http://xmlns.com/foaf/0.1/homepage> <http://www.thehayesweb.org/dhayes> ;
         <http://xmlns.com/foaf/0.1/mbox> <mailto:hayesd@montclair.edu> ;
         <http://xmlns.com/foaf/0.1/name> "Dawn Marie Hayes"^^xsd:string .
-
-
-###  http://www.normansicily.org/nsp#isFounderOf
-:isFounderOf rdf:type owl:NamedIndividual ;
-             rdfs:label "founded"@en .
-
-
-###  http://www.normansicily.org/nsp#isIn
-:isIn rdf:type owl:NamedIndividual ;
-      rdfs:label "is in"@en .
-
-
-###  http://www.normansicily.org/nsp#isLocationOf
-:isLocationOf rdf:type owl:NamedIndividual ;
-              rdfs:label "is the location of"@en .
-
-
-###  http://www.normansicily.org/nsp#isNameOf
-:isNameOf rdf:type owl:NamedIndividual ;
-          rdfs:label "is the name of"@en .
-
-
-###  http://www.normansicily.org/nsp#isNear
-:isNear rdf:type owl:NamedIndividual ;
-        rdfs:label "is near"@en .
-
-
-###  http://www.normansicily.org/nsp#isPreferred
-:isPreferred rdf:type owl:NamedIndividual ;
-             rdfs:label "Preferred"@en .
 
 
 ###  http://www.normansicily.org/nsp#joephayes
@@ -521,180 +551,11 @@ rdfs:label rdf:type owl:DatatypeProperty ;
            <http://xmlns.com/foaf/0.1/name> "Joseph Hayes"^^xsd:string .
 
 
-###  http://www.normansicily.org/nsp#locationCategory
-:locationCategory rdf:type owl:NamedIndividual ;
-                  rdfs:label "Location Category"@en .
-
-
-###  http://www.normansicily.org/nsp#maxEarliestAttestation
-:maxEarliestAttestation rdf:type owl:NamedIndividual ;
-                        rdfs:label "Earliest Year of Earliest Attestation"@en .
-
-
-###  http://www.normansicily.org/nsp#minEarliestAttestation
-:minEarliestAttestation rdf:type owl:NamedIndividual ;
-                        rdfs:label "Latest Year of Earliest Attestation"@en .
-
-
 ###  http://www.normansicily.org/nsp#nsp
 :nsp rdf:type owl:NamedIndividual ,
               <http://xmlns.com/foaf/0.1/Project> ;
      <http://xmlns.com/foaf/0.1/homepage> <http://www.normansicily.org/> ;
      <http://xmlns.com/foaf/0.1/organization> "The Norman Sicily Project"^^xsd:string .
-
-
-###  http://www.normansicily.org/nsp#order
-:order rdf:type owl:NamedIndividual ;
-       rdfs:label "Order"@en .
-
-
-###  http://www.normansicily.org/nsp#placeCategory
-:placeCategory rdf:type owl:NamedIndividual ;
-               rdfs:label "Place Category"@en .
-
-
-###  http://www.normansicily.org/nsp#positionalAccuracyAssessment
-:positionalAccuracyAssessment rdf:type owl:NamedIndividual ;
-                              rdfs:label "Positional Accuracy Assessment"@en .
-
-
-###  http://www.normansicily.org/nsp#seismicClassId
-:seismicClassId rdf:type owl:NamedIndividual ;
-                rdfs:label "Seismic Classification"@en .
-
-
-###  http://www.normansicily.org/nsp#type
-:type rdf:type owl:NamedIndividual ;
-      rdfs:label "Type"@en .
-
-
-###  http://www.normansicily.org/nsp#wasContainedBy
-:wasContainedBy rdf:type owl:NamedIndividual ;
-                rdfs:label "was contained in"@en .
-
-
-###  http://www.normansicily.org/nsp#wasIn
-:wasIn rdf:type owl:NamedIndividual ;
-       rdfs:label "was in"@en .
-
-
-###  http://www.normansicily.org/nsp/rankAtFoundaion
-<http://www.normansicily.org/nsp/rankAtFoundaion> rdf:type owl:NamedIndividual ;
-                                                  rdfs:label "Rank when founded"@en .
-
-
-###  https://www.normansicily.org/nsp#reignOfEarliestAttestestation
-<https://www.normansicily.org/nsp#reignOfEarliestAttestestation> rdf:type owl:NamedIndividual ;
-                                                                 rdfs:label "Reign of the earliest attestation"@en .
-
-
-#################################################################
-#    Annotations
-#################################################################
-
-:Location rdfs:comment "A Location represents a physical location on the Earth's surface"@en ;
-          rdfs:isDefinedBy : .
-
-
-:Monastery rdfs:comment "A monastery is the habitation of monks or nuns"@en ;
-           rdfs:isDefinedBy : .
-
-
-:Name rdfs:comment "A Name denotes a word which refers to a Place"@en ;
-      rdfs:isDefinedBy : .
-
-
-:Place rdfs:comment "A Place refers to a locus for which the Location may or may not be known. It may also have multiple Names."@en ;
-       rdfs:isDefinedBy : .
-
-
-:archaeologicalRemains rdfs:comment "Describes the state of the visible remains at a Location"@en ;
-                       rdfs:isDefinedBy : .
-
-
-:contains rdfs:isDefinedBy : .
-
-
-:dedication rdfs:comment "The person or thing to which a place was dedicated"@en ;
-            rdfs:isDefinedBy : .
-
-
-:earliestAttestation rdfs:comment "The earliest mention of a Place in a source"@en ;
-                     rdfs:isDefinedBy : .
-
-
-:hasFounder rdfs:isDefinedBy : .
-
-
-:hasLocation rdfs:isDefinedBy : .
-
-
-:hasName rdfs:isDefinedBy : .
-
-
-:isFounderOf rdfs:isDefinedBy : .
-
-
-:isIn rdfs:isDefinedBy : .
-
-
-:isLocationOf rdfs:isDefinedBy : .
-
-
-:isNameOf rdfs:isDefinedBy : .
-
-
-:isNear rdfs:isDefinedBy : .
-
-
-:isPreferred rdfs:comment "If true, then denotes the preferred name of a place"@en ;
-             rdfs:isDefinedBy : .
-
-
-:locationCategory rdfs:isDefinedBy : ;
-                  rdfs:seeAlso <https://pleiades.stoa.org/vocabularies/location-types> .
-
-
-:maxEarliestAttestation rdfs:comment "The earliest year an attestation could have been made"@en ;
-                        rdfs:isDefinedBy : .
-
-
-:minEarliestAttestation rdfs:comment "The latest year an attestation could have been made"@en ;
-                        rdfs:isDefinedBy : .
-
-
-:order rdfs:comment "An order is a group of person living under a religious rule"@en ;
-       rdfs:isDefinedBy : .
-
-
-:placeCategory rdfs:comment "Category of the place as per the Getty AAT http://www.getty.edu/research/tools/vocabularies/aat/"@en ;
-               rdfs:isDefinedBy : .
-
-
-:positionalAccuracyAssessment rdfs:comment "Assessment of accuracy of place's location"@en ;
-                              rdfs:isDefinedBy : .
-
-
-:seismicClassId rdfs:comment "Seismic classifcation as per http://www.protezionecivile.gov.it/jcms/en/classificazione.wp"@en ;
-                rdfs:isDefinedBy : .
-
-
-:type rdfs:comment "The type of the Place"@en ;
-      rdfs:isDefinedBy : .
-
-
-:wasContainedBy rdfs:isDefinedBy : .
-
-
-:wasIn rdfs:isDefinedBy : .
-
-
-<http://www.normansicily.org/nsp/rankAtFoundaion> rdfs:comment "The rank of the Place when it was founded"@en ;
-                                                  rdfs:isDefinedBy : .
-
-
-<https://www.normansicily.org/nsp#reignOfEarliestAttestestation> rdfs:comment "The reign during which the earliest attestation occurred"@en ;
-                                                                 rdfs:isDefinedBy : .
 
 
 ###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

@@ -9,23 +9,33 @@ This section provides details for each class and property defined by The Norman 
          </a>
       </li>
       <li>
+         <a href="#http://dbpedia.org/ontology/HistoricalProvince" title="http://dbpedia.org/ontology/HistoricalProvince">
+            <span>historical province</span>
+         </a>
+      </li>
+      <li>
          <a href="#Location" title="http://www.normansicily.org/nsp#Location">
-            <span>Location</span>
+            <span>location</span>
          </a>
       </li>
       <li>
          <a href="#Monastery" title="http://www.normansicily.org/nsp#Monastery">
-            <span>Monastery</span>
+            <span>monastery</span>
          </a>
       </li>
       <li>
          <a href="#Name" title="http://www.normansicily.org/nsp#Name">
-            <span>Name</span>
+            <span>name</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person">
+            <span>person</span>
          </a>
       </li>
       <li>
          <a href="#Place" title="http://www.normansicily.org/nsp#Place">
-            <span>Place</span>
+            <span>place</span>
          </a>
       </li>
    </ul>
@@ -36,32 +46,81 @@ This section provides details for each class and property defined by The Norman 
       </h3>
       <p>
          <strong>IRI:</strong> http://www.normansicily.org/nsp#Founder</p>
+      <div class="comment">
+         <span class="markdown">A founder or founding member of an organization or place</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://xmlns.com/foaf/0.1/Agent">agent</span>
+            <a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person">person</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#isFounderOf" title="http://www.normansicily.org/nsp#isFounderOf">founded</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://schema.org/honorificPrefix" title="http://schema.org/honorificPrefix">honorific prefix</a>
-            <sup class="type-dp" title="data property">dp</sup>
+            <a href="#isFounderOf" title="http://www.normansicily.org/nsp#isFounderOf">is founder of</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasFounder" title="http://www.normansicily.org/nsp#hasFounder">was founded by</a>
+            <a href="#hasFounder" title="http://www.normansicily.org/nsp#hasFounder">has founder</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Location" title="http://www.normansicily.org/nsp#Location">location</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Name" title="http://www.normansicily.org/nsp#Name">name</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Place" title="http://www.normansicily.org/nsp#Place">place</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://dbpedia.org/ontology/HistoricalProvince">
+      <h3>historical province<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://dbpedia.org/ontology/HistoricalProvince</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://dbpedia.org/ontology/Province">province</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#wasContainedBy" title="http://www.normansicily.org/nsp#wasContainedBy">was contained by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#wasIn" title="http://www.normansicily.org/nsp#wasIn">was in</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="Location">
-      <h3>Location<sup class="type-c" title="class">c</sup>
+      <h3>location<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.normansicily.org/nsp#Location</p>
+      <div class="comment">
+         <span class="markdown">A Location represents a physical location on the Earth's surface</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -70,67 +129,94 @@ This section provides details for each class and property defined by The Norman 
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#archaeologicalRemains"
-               title="http://www.normansicily.org/nsp#archaeologicalRemains">Archaeological Remains</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#locationCategory" title="http://www.normansicily.org/nsp#locationCategory">Location Category</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#positionalAccuracyAssessment"
-               title="http://www.normansicily.org/nsp#positionalAccuracyAssessment">Positional Accuracy Assessment</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#seismicClassId" title="http://www.normansicily.org/nsp#seismicClassId">Seismic Classification</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#alt" title="http://www.w3.org/2003/01/geo/wgs84_pos#alt">alt</a>
+            <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#alt" title="http://www.w3.org/2003/01/geo/wgs84_pos#alt">alt</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#archaeologicalRemains"
+               title="http://www.normansicily.org/nsp#archaeologicalRemains">archaeological remains</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#isIn" title="http://www.normansicily.org/nsp#isIn">is in</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isLocationOf" title="http://www.normansicily.org/nsp#isLocationOf">is location of</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isNear" title="http://www.normansicily.org/nsp#isNear">is near</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isLocationOf" title="http://www.normansicily.org/nsp#isLocationOf">is the location of</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#lat" title="http://www.w3.org/2003/01/geo/wgs84_pos#lat">lat</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#locationCategory" title="http://www.normansicily.org/nsp#locationCategory">location category</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#long" title="http://www.w3.org/2003/01/geo/wgs84_pos#long">long</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#positionalAccuracyAssessment"
+               title="http://www.normansicily.org/nsp#positionalAccuracyAssessment">positional accuracy assessment</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#seismicClassId" title="http://www.normansicily.org/nsp#seismicClassId">seismic class id</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#wasIn" title="http://www.normansicily.org/nsp#wasIn">was in</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#contains" title="http://www.normansicily.org/nsp#contains">contains</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasLocation" title="http://www.normansicily.org/nsp#hasLocation">is located at</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#wasContainedBy" title="http://www.normansicily.org/nsp#wasContainedBy">was contained in</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasLocation" title="http://www.normansicily.org/nsp#hasLocation">has location</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#wasContainedBy" title="http://www.normansicily.org/nsp#wasContainedBy">was contained by</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
-         <dt>is also defined as</dt>
+         <dt>is disjoint with</dt>
          <dd>
-            <a href="#Location">named individual</a>
+            <a href="#Founder" title="http://www.normansicily.org/nsp#Founder">founder</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="Monastery">
-      <h3>Monastery<sup class="type-c" title="class">c</sup>
+      <h3>monastery<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.normansicily.org/nsp#Monastery</p>
+      <div class="comment">
+         <span class="markdown">A monastery is the habitation of monks or nuns</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#Place" title="http://www.normansicily.org/nsp#Place">Place</a>
+            <a href="#Place" title="http://www.normansicily.org/nsp#Place">place</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#dedication" title="http://www.normansicily.org/nsp#dedication">Dedication</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#order" title="http://www.normansicily.org/nsp#order">Order</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#/rankAtFoundaion" title="http://www.normansicily.org/nsp/rankAtFoundaion">Rank when founded</a>
+            <a href="#dedication" title="http://www.normansicily.org/nsp#dedication">dedication</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasChildren" title="http://www.normansicily.org/nsp#hasChildren">has children</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasParent" title="http://www.normansicily.org/nsp#hasParent">has parent</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isChildOf" title="http://www.normansicily.org/nsp#isChildOf">is child of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isParentOf" title="http://www.normansicily.org/nsp#isParentOf">is parent of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#order" title="http://www.normansicily.org/nsp#order">order</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/rankAtFoundation" title="http://www.normansicily.org/nsp/rankAtFoundation">rank at foundation</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
-         <dt>is also defined as</dt>
+         <dt>is in range of</dt>
          <dd>
-            <a href="#Monastery">named individual</a>
+            <a href="#hasChildren" title="http://www.normansicily.org/nsp#hasChildren">has children</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasParent" title="http://www.normansicily.org/nsp#hasParent">has parent</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isChildOf" title="http://www.normansicily.org/nsp#isChildOf">is child of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isParentOf" title="http://www.normansicily.org/nsp#isParentOf">is parent of</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="Name">
-      <h3>Name<sup class="type-c" title="class">c</sup>
+      <h3>name<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.normansicily.org/nsp#Name</p>
+      <div class="comment">
+         <span class="markdown">A Name denotes a word which refers to a Place or a Location</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -139,30 +225,72 @@ This section provides details for each class and property defined by The Norman 
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#isPreferred" title="http://www.normansicily.org/nsp#isPreferred">Preferred</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#isNameOf" title="http://www.normansicily.org/nsp#isNameOf">is the name of</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
+            <a href="#isNameOf" title="http://www.normansicily.org/nsp#isNameOf">is name of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isPreferred" title="http://www.normansicily.org/nsp#isPreferred">is preferred</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://purl.org/dc/terms/language" title="http://purl.org/dc/terms/language">language</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasName" title="http://www.normansicily.org/nsp#hasName">was named</a>
+            <a href="#hasName" title="http://www.normansicily.org/nsp#hasName">has name</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
-         <dt>is also defined as</dt>
+         <dt>is disjoint with</dt>
          <dd>
-            <a href="#Name">named individual</a>
+            <a href="#Founder" title="http://www.normansicily.org/nsp#Founder">founder</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://xmlns.com/foaf/0.1/Person">
+      <h3>person<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://xmlns.com/foaf/0.1/Person</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://xmlns.com/foaf/0.1/Agent">agent</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Founder" title="http://www.normansicily.org/nsp#Founder">founder</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://xmlns.com/foaf/0.1/gender" title="http://xmlns.com/foaf/0.1/gender">gender</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://schema.org/honorificPrefix" title="http://schema.org/honorificPrefix">honorific prefix</a>
+            <sup class="type-dp" title="data property">dp</sup>, <span class="dotted" title="http://xmlns.com/foaf/0.1/name">name</span>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#hayesd" title="http://www.normansicily.org/nsp#hayesd">hayesd</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#joephayes" title="http://www.normansicily.org/nsp#joephayes">joephayes</a>
+            <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="Place">
-      <h3>Place<sup class="type-c" title="class">c</sup>
+      <h3>place<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.normansicily.org/nsp#Place</p>
+      <div class="comment">
+         <span class="markdown">A Place refers to a locus for which the Location may or may not be known. It may also have multiple Names.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansiicly.org/nsp#">http://www.normansiicly.org/nsp#</a>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -171,26 +299,27 @@ This section provides details for each class and property defined by The Norman 
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#Monastery" title="http://www.normansicily.org/nsp#Monastery">Monastery</a>
+            <a href="#Monastery" title="http://www.normansicily.org/nsp#Monastery">monastery</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#placeCategory" title="http://www.normansicily.org/nsp#placeCategory">Place Category</a>
+            <a href="#hasFounder" title="http://www.normansicily.org/nsp#hasFounder">has founder</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#placeCategory" title="http://www.normansicily.org/nsp#placeCategory">place category</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#https://www.normansicily.org/nsp#reignOfEarliestAttestestation"
-               title="https://www.normansicily.org/nsp#reignOfEarliestAttestestation">Reign of the earliest attestation</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#type" title="http://www.normansicily.org/nsp#type">Type</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasFounder" title="http://www.normansicily.org/nsp#hasFounder">was founded by</a>
-            <sup class="type-op" title="object property">op</sup>
+               title="https://www.normansicily.org/nsp#reignOfEarliestAttestestation">reign of earliest attestestation</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#type" title="http://www.normansicily.org/nsp#type">type</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#isFounderOf" title="http://www.normansicily.org/nsp#isFounderOf">founded</a>
+            <a href="#isFounderOf" title="http://www.normansicily.org/nsp#isFounderOf">is founder of</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
-         <dt>is also defined as</dt>
+         <dt>is disjoint with</dt>
          <dd>
-            <a href="#Place">named individual</a>
+            <a href="#Founder" title="http://www.normansicily.org/nsp#Founder">founder</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -203,8 +332,38 @@ This section provides details for each class and property defined by The Norman 
          </a>
       </li>
       <li>
+         <a href="#hasChildren" title="http://www.normansicily.org/nsp#hasChildren">
+            <span>has children</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasFounder" title="http://www.normansicily.org/nsp#hasFounder">
+            <span>has founder</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasLocation" title="http://www.normansicily.org/nsp#hasLocation">
+            <span>has location</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasName" title="http://www.normansicily.org/nsp#hasName">
+            <span>has name</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasParent" title="http://www.normansicily.org/nsp#hasParent">
+            <span>has parent</span>
+         </a>
+      </li>
+      <li>
+         <a href="#isChildOf" title="http://www.normansicily.org/nsp#isChildOf">
+            <span>is child of</span>
+         </a>
+      </li>
+      <li>
          <a href="#isFounderOf" title="http://www.normansicily.org/nsp#isFounderOf">
-            <span>founded</span>
+            <span>is founder of</span>
          </a>
       </li>
       <li>
@@ -213,8 +372,13 @@ This section provides details for each class and property defined by The Norman 
          </a>
       </li>
       <li>
-         <a href="#hasLocation" title="http://www.normansicily.org/nsp#hasLocation">
-            <span>is located at</span>
+         <a href="#isLocationOf" title="http://www.normansicily.org/nsp#isLocationOf">
+            <span>is location of</span>
+         </a>
+      </li>
+      <li>
+         <a href="#isNameOf" title="http://www.normansicily.org/nsp#isNameOf">
+            <span>is name of</span>
          </a>
       </li>
       <li>
@@ -223,33 +387,18 @@ This section provides details for each class and property defined by The Norman 
          </a>
       </li>
       <li>
-         <a href="#isLocationOf" title="http://www.normansicily.org/nsp#isLocationOf">
-            <span>is the location of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isNameOf" title="http://www.normansicily.org/nsp#isNameOf">
-            <span>is the name of</span>
+         <a href="#isParentOf" title="http://www.normansicily.org/nsp#isParentOf">
+            <span>is parent of</span>
          </a>
       </li>
       <li>
          <a href="#wasContainedBy" title="http://www.normansicily.org/nsp#wasContainedBy">
-            <span>was contained in</span>
-         </a>
-      </li>
-      <li>
-         <a href="#hasFounder" title="http://www.normansicily.org/nsp#hasFounder">
-            <span>was founded by</span>
+            <span>was contained by</span>
          </a>
       </li>
       <li>
          <a href="#wasIn" title="http://www.normansicily.org/nsp#wasIn">
             <span>was in</span>
-         </a>
-      </li>
-      <li>
-         <a href="#hasName" title="http://www.normansicily.org/nsp#hasName">
-            <span>was named</span>
          </a>
       </li>
    </ul>
@@ -260,6 +409,15 @@ This section provides details for each class and property defined by The Norman 
       </h3>
       <p>
          <strong>IRI:</strong> http://www.normansicily.org/nsp#contains</p>
+      <div class="comment">
+         <span class="markdown">A province (administrative grouping) contains a location</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -269,7 +427,7 @@ This section provides details for each class and property defined by The Norman 
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Location" title="http://www.normansicily.org/nsp#Location">Location</a>
+               <a href="#Location" title="http://www.normansicily.org/nsp#Location">location</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -277,20 +435,247 @@ This section provides details for each class and property defined by The Norman 
                <a href="#isIn" title="http://www.normansicily.org/nsp#isIn">is in</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>is also defined as</dt>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasChildren">
+      <h3>has children<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.normansicily.org/nsp#hasChildren</p>
+      <div class="comment">
+         <span class="markdown">A Monastery has one or more Monasteries subject to it</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
             <dd>
-               <a href="#contains">named individual</a>
+               <a href="#Monastery" title="http://www.normansicily.org/nsp#Monastery">monastery</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Monastery" title="http://www.normansicily.org/nsp#Monastery">monastery</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isChildOf" title="http://www.normansicily.org/nsp#isChildOf">is child of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasFounder">
+      <h3>has founder<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.normansicily.org/nsp#hasFounder</p>
+      <div class="comment">
+         <span class="markdown">A Place has one or more founders</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Place" title="http://www.normansicily.org/nsp#Place">place</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Founder" title="http://www.normansicily.org/nsp#Founder">founder</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isFounderOf" title="http://www.normansicily.org/nsp#isFounderOf">is founder of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasLocation">
+      <h3>has location<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.normansicily.org/nsp#hasLocation</p>
+      <div class="comment">
+         <span class="markdown">A Name or a Place has a known Location</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Name" title="http://www.normansicily.org/nsp#Name">name</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Place" title="http://www.normansicily.org/nsp#Place">place</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Location" title="http://www.normansicily.org/nsp#Location">location</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isLocationOf" title="http://www.normansicily.org/nsp#isLocationOf">is location of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasName">
+      <h3>has name<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.normansicily.org/nsp#hasName</p>
+      <div class="comment">
+         <span class="markdown">A Location or Place has Name</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Location" title="http://www.normansicily.org/nsp#Location">location</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Place" title="http://www.normansicily.org/nsp#Place">place</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Name" title="http://www.normansicily.org/nsp#Name">name</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isNameOf" title="http://www.normansicily.org/nsp#isNameOf">is name of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasParent">
+      <h3>has parent<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.normansicily.org/nsp#hasParent</p>
+      <div class="comment">
+         <span class="markdown">A Monastery has a Motherhouse</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Monastery" title="http://www.normansicily.org/nsp#Monastery">monastery</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Monastery" title="http://www.normansicily.org/nsp#Monastery">monastery</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isParentOf" title="http://www.normansicily.org/nsp#isParentOf">is parent of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isChildOf">
+      <h3>is child of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.normansicily.org/nsp#isChildOf</p>
+      <div class="comment">
+         <span class="markdown">A Monastery is subject to another Monastery</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Monastery" title="http://www.normansicily.org/nsp#Monastery">monastery</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Monastery" title="http://www.normansicily.org/nsp#Monastery">monastery</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasChildren" title="http://www.normansicily.org/nsp#hasChildren">has children</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="isFounderOf">
-      <h3>founded<sup class="type-op" title="object property">op</sup>
+      <h3>is founder of<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.normansicily.org/nsp#isFounderOf</p>
+      <div class="comment">
+         <span class="markdown">A Founder (Person) founded a Place</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -300,17 +685,13 @@ This section provides details for each class and property defined by The Norman 
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Place" title="http://www.normansicily.org/nsp#Place">Place</a>
+               <a href="#Place" title="http://www.normansicily.org/nsp#Place">place</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#hasFounder" title="http://www.normansicily.org/nsp#hasFounder">was founded by</a>
+               <a href="#hasFounder" title="http://www.normansicily.org/nsp#hasFounder">has founder</a>
                <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#isFounderOf">named individual</a>
             </dd>
          </dl>
       </div>
@@ -322,11 +703,20 @@ This section provides details for each class and property defined by The Norman 
       </h3>
       <p>
          <strong>IRI:</strong> http://www.normansicily.org/nsp#isIn</p>
+      <div class="comment">
+         <span class="markdown">A location is contained in a province (administrative grouping)</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Location" title="http://www.normansicily.org/nsp#Location">Location</a>
+               <a href="#Location" title="http://www.normansicily.org/nsp#Location">location</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -339,43 +729,83 @@ This section provides details for each class and property defined by The Norman 
                <a href="#contains" title="http://www.normansicily.org/nsp#contains">contains</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#isIn">named individual</a>
-            </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasLocation">
-      <h3>is located at<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="isLocationOf">
+      <h3>is location of<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#hasLocation</p>
+         <strong>IRI:</strong> http://www.normansicily.org/nsp#isLocationOf</p>
+      <div class="comment">
+         <span class="markdown">A Location is known for a Name or Place</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Name" title="http://www.normansicily.org/nsp#Name">Name</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#Place" title="http://www.normansicily.org/nsp#Place">Place</a>
+               <a href="#Location" title="http://www.normansicily.org/nsp#Location">location</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Location" title="http://www.normansicily.org/nsp#Location">Location</a>
+               <a href="#Name" title="http://www.normansicily.org/nsp#Name">name</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Place" title="http://www.normansicily.org/nsp#Place">place</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#isLocationOf" title="http://www.normansicily.org/nsp#isLocationOf">is the location of</a>
+               <a href="#hasLocation" title="http://www.normansicily.org/nsp#hasLocation">has location</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>is also defined as</dt>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isNameOf">
+      <h3>is name of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.normansicily.org/nsp#isNameOf</p>
+      <div class="comment">
+         <span class="markdown">A Name is known for a Location or Place</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
             <dd>
-               <a href="#hasLocation">named individual</a>
+               <a href="#Name" title="http://www.normansicily.org/nsp#Name">name</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Location" title="http://www.normansicily.org/nsp#Location">location</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Place" title="http://www.normansicily.org/nsp#Place">place</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasName" title="http://www.normansicily.org/nsp#hasName">has name</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -387,11 +817,20 @@ This section provides details for each class and property defined by The Norman 
       </h3>
       <p>
          <strong>IRI:</strong> http://www.normansicily.org/nsp#isNear</p>
+      <div class="comment">
+         <span class="markdown">A Location is nearby, or contained in, a Municipality</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Location" title="http://www.normansicily.org/nsp#Location">Location</a>
+               <a href="#Location" title="http://www.normansicily.org/nsp#Location">location</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -399,139 +838,77 @@ This section provides details for each class and property defined by The Norman 
                <span class="dotted" title="http://dbpedia.org/ontology/Municipality">municipality</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#isNear">named individual</a>
-            </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="isLocationOf">
-      <h3>is the location of<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="isParentOf">
+      <h3>is parent of<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#isLocationOf</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Location" title="http://www.normansicily.org/nsp#Location">Location</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Name" title="http://www.normansicily.org/nsp#Name">Name</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#Place" title="http://www.normansicily.org/nsp#Place">Place</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#hasLocation" title="http://www.normansicily.org/nsp#hasLocation">is located at</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#isLocationOf">named individual</a>
-            </dd>
-         </dl>
+         <strong>IRI:</strong> http://www.normansicily.org/nsp#isParentOf</p>
+      <div class="comment">
+         <span class="markdown">A Monastery is the motherhouse to another Monastery</span>
       </div>
-   </div>
-   <div class="entity" id="isNameOf">
-      <h3>is the name of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#isNameOf</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Name" title="http://www.normansicily.org/nsp#Name">Name</a>
+               <a href="#Monastery" title="http://www.normansicily.org/nsp#Monastery">monastery</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Location" title="http://www.normansicily.org/nsp#Location">Location</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#Place" title="http://www.normansicily.org/nsp#Place">Place</a>
+               <a href="#Monastery" title="http://www.normansicily.org/nsp#Monastery">monastery</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#hasName" title="http://www.normansicily.org/nsp#hasName">was named</a>
+               <a href="#hasParent" title="http://www.normansicily.org/nsp#hasParent">has parent</a>
                <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#isNameOf">named individual</a>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="wasContainedBy">
-      <h3>was contained in<sup class="type-op" title="object property">op</sup>
+      <h3>was contained by<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.normansicily.org/nsp#wasContainedBy</p>
+      <div class="comment">
+         <span class="markdown">A historical province contains a Location</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://dbpedia.org/ontology/HistoricalProvince">historical province</span>
+               <a href="#http://dbpedia.org/ontology/HistoricalProvince" title="http://dbpedia.org/ontology/HistoricalProvince">historical province</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Location" title="http://www.normansicily.org/nsp#Location">Location</a>
+               <a href="#Location" title="http://www.normansicily.org/nsp#Location">location</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#wasIn" title="http://www.normansicily.org/nsp#wasIn">was in</a>
                <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#wasContainedBy">named individual</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasFounder">
-      <h3>was founded by<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#hasFounder</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Place" title="http://www.normansicily.org/nsp#Place">Place</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Founder" title="http://www.normansicily.org/nsp#Founder">founder</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#isFounderOf" title="http://www.normansicily.org/nsp#isFounderOf">founded</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#hasFounder">named individual</a>
             </dd>
          </dl>
       </div>
@@ -543,60 +920,31 @@ This section provides details for each class and property defined by The Norman 
       </h3>
       <p>
          <strong>IRI:</strong> http://www.normansicily.org/nsp#wasIn</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Location" title="http://www.normansicily.org/nsp#Location">Location</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://dbpedia.org/ontology/HistoricalProvince">historical province</span>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#wasContainedBy" title="http://www.normansicily.org/nsp#wasContainedBy">was contained in</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#wasIn">named individual</a>
-            </dd>
-         </dl>
+      <div class="comment">
+         <span class="markdown">A Location was contained in a historical province</span>
       </div>
-   </div>
-   <div class="entity" id="hasName">
-      <h3>was named<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#hasName</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Location" title="http://www.normansicily.org/nsp#Location">Location</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#Place" title="http://www.normansicily.org/nsp#Place">Place</a>
+               <a href="#Location" title="http://www.normansicily.org/nsp#Location">location</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Name" title="http://www.normansicily.org/nsp#Name">Name</a>
+               <a href="#http://dbpedia.org/ontology/HistoricalProvince" title="http://dbpedia.org/ontology/HistoricalProvince">historical province</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#isNameOf" title="http://www.normansicily.org/nsp#isNameOf">is the name of</a>
+               <a href="#wasContainedBy" title="http://www.normansicily.org/nsp#wasContainedBy">was contained by</a>
                <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#hasName">named individual</a>
             </dd>
          </dl>
       </div>
@@ -612,18 +960,18 @@ This section provides details for each class and property defined by The Norman 
       <li>
          <a href="#archaeologicalRemains"
             title="http://www.normansicily.org/nsp#archaeologicalRemains">
-            <span>Archaeological Remains</span>
+            <span>archaeological remains</span>
          </a>
       </li>
       <li>
          <a href="#dedication" title="http://www.normansicily.org/nsp#dedication">
-            <span>Dedication</span>
+            <span>dedication</span>
          </a>
       </li>
       <li>
-         <a href="#maxEarliestAttestation"
-            title="http://www.normansicily.org/nsp#maxEarliestAttestation">
-            <span>Earliest Year of Earliest Attestation</span>
+         <a href="#earliestAttestation"
+            title="http://www.normansicily.org/nsp#earliestAttestation">
+            <span>earliest attestation</span>
          </a>
       </li>
       <li>
@@ -634,6 +982,11 @@ This section provides details for each class and property defined by The Norman 
       <li>
          <a href="#http://schema.org/honorificPrefix" title="http://schema.org/honorificPrefix">
             <span>honorific prefix</span>
+         </a>
+      </li>
+      <li>
+         <a href="#isPreferred" title="http://www.normansicily.org/nsp#isPreferred">
+            <span>is preferred</span>
          </a>
       </li>
       <li>
@@ -652,14 +1005,8 @@ This section provides details for each class and property defined by The Norman 
          </a>
       </li>
       <li>
-         <a href="#minEarliestAttestation"
-            title="http://www.normansicily.org/nsp#minEarliestAttestation">
-            <span>Latest Year of Earliest Attestation</span>
-         </a>
-      </li>
-      <li>
          <a href="#locationCategory" title="http://www.normansicily.org/nsp#locationCategory">
-            <span>Location Category</span>
+            <span>location category</span>
          </a>
       </li>
       <li>
@@ -668,45 +1015,52 @@ This section provides details for each class and property defined by The Norman 
          </a>
       </li>
       <li>
+         <a href="#maxEarliestAttestation"
+            title="http://www.normansicily.org/nsp#maxEarliestAttestation">
+            <span>max earliest attestation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#minEarliestAttestation"
+            title="http://www.normansicily.org/nsp#minEarliestAttestation">
+            <span>min earliest attestation</span>
+         </a>
+      </li>
+      <li>
          <a href="#order" title="http://www.normansicily.org/nsp#order">
-            <span>Order</span>
+            <span>order</span>
          </a>
       </li>
       <li>
          <a href="#placeCategory" title="http://www.normansicily.org/nsp#placeCategory">
-            <span>Place Category</span>
+            <span>place category</span>
          </a>
       </li>
       <li>
          <a href="#positionalAccuracyAssessment"
             title="http://www.normansicily.org/nsp#positionalAccuracyAssessment">
-            <span>Positional Accuracy Assessment</span>
+            <span>positional accuracy assessment</span>
          </a>
       </li>
       <li>
-         <a href="#isPreferred" title="http://www.normansicily.org/nsp#isPreferred">
-            <span>Preferred</span>
-         </a>
-      </li>
-      <li>
-         <a href="#/rankAtFoundaion" title="http://www.normansicily.org/nsp/rankAtFoundaion">
-            <span>Rank when founded</span>
+         <a href="#/rankAtFoundation" title="http://www.normansicily.org/nsp/rankAtFoundation">
+            <span>rank at foundation</span>
          </a>
       </li>
       <li>
          <a href="#https://www.normansicily.org/nsp#reignOfEarliestAttestestation"
             title="https://www.normansicily.org/nsp#reignOfEarliestAttestestation">
-            <span>Reign of the earliest attestation</span>
+            <span>reign of earliest attestestation</span>
          </a>
       </li>
       <li>
          <a href="#seismicClassId" title="http://www.normansicily.org/nsp#seismicClassId">
-            <span>Seismic Classification</span>
+            <span>seismic class id</span>
          </a>
       </li>
       <li>
          <a href="#type" title="http://www.normansicily.org/nsp#type">
-            <span>Type</span>
+            <span>type</span>
          </a>
       </li>
    </ul>
@@ -721,7 +1075,7 @@ This section provides details for each class and property defined by The Norman 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Location" title="http://www.normansicily.org/nsp#Location">Location</a>
+               <a href="#Location" title="http://www.normansicily.org/nsp#Location">location</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -732,77 +1086,90 @@ This section provides details for each class and property defined by The Norman 
       </div>
    </div>
    <div class="entity" id="archaeologicalRemains">
-      <h3>Archaeological Remains<sup class="type-dp" title="data property">dp</sup>
+      <h3>archaeological remains<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.normansicily.org/nsp#archaeologicalRemains</p>
+      <div class="comment">
+         <span class="markdown">Describes the state of the visible remains at a Location</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Location" title="http://www.normansicily.org/nsp#Location">Location</a>
+               <a href="#Location" title="http://www.normansicily.org/nsp#Location">location</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#archaeologicalRemains">named individual</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="dedication">
-      <h3>Dedication<sup class="type-dp" title="data property">dp</sup>
+      <h3>dedication<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.normansicily.org/nsp#dedication</p>
+      <div class="comment">
+         <span class="markdown">The person or thing to which a place was dedicated</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Monastery" title="http://www.normansicily.org/nsp#Monastery">Monastery</a>
+               <a href="#Monastery" title="http://www.normansicily.org/nsp#Monastery">monastery</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#dedication">named individual</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="maxEarliestAttestation">
-      <h3>Earliest Year of Earliest Attestation<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="earliestAttestation">
+      <h3>earliest attestation<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#maxEarliestAttestation</p>
+         <strong>IRI:</strong> http://www.normansicily.org/nsp#earliestAttestation</p>
+      <div class="comment">
+         <span class="markdown">The earliest mention of a Place in a source</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
-            <dt>has super-properties</dt>
+            <dt>has sub-properties</dt>
             <dd>
-               <span class="dotted"
-                     title="http://www.normansicily.org/nsp#earliestAttestation">Earliest Attestation</span>
+               <a href="#maxEarliestAttestation"
+                  title="http://www.normansicily.org/nsp#maxEarliestAttestation">max earliest attestation</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#minEarliestAttestation"
+                  title="http://www.normansicily.org/nsp#minEarliestAttestation">min earliest attestation</a>
                <sup class="type-dp" title="data property">dp</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#gYear">g year</span>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#maxEarliestAttestation">named individual</a>
             </dd>
          </dl>
       </div>
@@ -815,7 +1182,14 @@ This section provides details for each class and property defined by The Norman 
       <p>
          <strong>IRI:</strong> http://xmlns.com/foaf/0.1/gender</p>
       <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person">person</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>{ "Female" , "Male" , "Unknown" }</dd>
          </dl>
@@ -832,8 +1206,44 @@ This section provides details for each class and property defined by The Norman 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Founder" title="http://www.normansicily.org/nsp#Founder">founder</a>
+               <a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person">person</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://schema.org/Text">text</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isPreferred">
+      <h3>is preferred<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.normansicily.org/nsp#isPreferred</p>
+      <div class="comment">
+         <span class="markdown">If true, then it denotes that the name is the preferred one for the Place or Location</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Name" title="http://www.normansicily.org/nsp#Name">name</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
             </dd>
          </dl>
       </div>
@@ -849,12 +1259,12 @@ This section provides details for each class and property defined by The Norman 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Name" title="http://www.normansicily.org/nsp#Name">Name</a>
+               <a href="#Name" title="http://www.normansicily.org/nsp#Name">name</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
@@ -870,7 +1280,7 @@ This section provides details for each class and property defined by The Norman 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Name" title="http://www.normansicily.org/nsp#Name">Name</a>
+               <a href="#Name" title="http://www.normansicily.org/nsp#Name">name</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -891,7 +1301,7 @@ This section provides details for each class and property defined by The Norman 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Location" title="http://www.normansicily.org/nsp#Location">Location</a>
+               <a href="#Location" title="http://www.normansicily.org/nsp#Location">location</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -901,52 +1311,31 @@ This section provides details for each class and property defined by The Norman 
          </dl>
       </div>
    </div>
-   <div class="entity" id="minEarliestAttestation">
-      <h3>Latest Year of Earliest Attestation<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#minEarliestAttestation</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://www.normansicily.org/nsp#earliestAttestation">Earliest Attestation</span>
-               <sup class="type-dp" title="data property">dp</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#gYear">g year</span>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#minEarliestAttestation">named individual</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="locationCategory">
-      <h3>Location Category<sup class="type-dp" title="data property">dp</sup>
+      <h3>location category<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.normansicily.org/nsp#locationCategory</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Location" title="http://www.normansicily.org/nsp#Location">Location</a>
+               <a href="#Location" title="http://www.normansicily.org/nsp#Location">location</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
-            <dd>{ "Associated Modern" , "Central Point" , "Representative" , "Unknown" }</dd>
-            <dt>is also defined as</dt>
             <dd>
-               <a href="#locationCategory">named individual</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
+            <dd>{ "Associated Modern" , "Central Point" , "Representative" , "Unknown" }</dd>
          </dl>
       </div>
    </div>
@@ -961,7 +1350,7 @@ This section provides details for each class and property defined by The Norman 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Location" title="http://www.normansicily.org/nsp#Location">Location</a>
+               <a href="#Location" title="http://www.normansicily.org/nsp#Location">location</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -971,198 +1360,280 @@ This section provides details for each class and property defined by The Norman 
          </dl>
       </div>
    </div>
+   <div class="entity" id="maxEarliestAttestation">
+      <h3>max earliest attestation<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.normansicily.org/nsp#maxEarliestAttestation</p>
+      <div class="comment">
+         <span class="markdown">The latest year an attestation could have been made</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#earliestAttestation"
+                  title="http://www.normansicily.org/nsp#earliestAttestation">earliest attestation</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#gYear">g year</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="minEarliestAttestation">
+      <h3>min earliest attestation<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.normansicily.org/nsp#minEarliestAttestation</p>
+      <div class="comment">
+         <span class="markdown">The earliest year an attestation could have been made</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#earliestAttestation"
+                  title="http://www.normansicily.org/nsp#earliestAttestation">earliest attestation</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#gYear">g year</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="order">
-      <h3>Order<sup class="type-dp" title="data property">dp</sup>
+      <h3>order<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.normansicily.org/nsp#order</p>
+      <div class="comment">
+         <span class="markdown">An order is a group of person living under a religious rule</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Monastery" title="http://www.normansicily.org/nsp#Monastery">Monastery</a>
+               <a href="#Monastery" title="http://www.normansicily.org/nsp#Monastery">monastery</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#order">named individual</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="placeCategory">
-      <h3>Place Category<sup class="type-dp" title="data property">dp</sup>
+      <h3>place category<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.normansicily.org/nsp#placeCategory</p>
+      <div class="comment">
+         <span class="markdown">Category of the place as per the Getty AAT http://www.getty.edu/research/tools/vocabularies/aat/</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Place" title="http://www.normansicily.org/nsp#Place">Place</a>
+               <a href="#Place" title="http://www.normansicily.org/nsp#Place">place</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</span>
             </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#placeCategory">named individual</a>
-            </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="positionalAccuracyAssessment">
-      <h3>Positional Accuracy Assessment<sup class="type-dp" title="data property">dp</sup>
+      <h3>positional accuracy assessment<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.normansicily.org/nsp#positionalAccuracyAssessment</p>
+      <div class="comment">
+         <span class="markdown">Assessment of accuracy of place's location</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Location" title="http://www.normansicily.org/nsp#Location">Location</a>
+               <a href="#Location" title="http://www.normansicily.org/nsp#Location">location</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+            </dd>
             <dd>{ "Generic Handheld GPS" , "Google Earth" , "Unknown" }</dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#positionalAccuracyAssessment">named individual</a>
-            </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="isPreferred">
-      <h3>Preferred<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/rankAtFoundation">
+      <h3>rank at foundation<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#isPreferred</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Name" title="http://www.normansicily.org/nsp#Name">Name</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#isPreferred">named individual</a>
-            </dd>
-         </dl>
+         <strong>IRI:</strong> http://www.normansicily.org/nsp/rankAtFoundation</p>
+      <div class="comment">
+         <span class="markdown">The rank of the Place when it was founded</span>
       </div>
-   </div>
-   <div class="entity" id="/rankAtFoundaion">
-      <h3>Rank when founded<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp/rankAtFoundaion</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Monastery" title="http://www.normansicily.org/nsp#Monastery">Monastery</a>
+               <a href="#Monastery" title="http://www.normansicily.org/nsp#Monastery">monastery</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#/rankAtFoundaion">named individual</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="https://www.normansicily.org/nsp#reignOfEarliestAttestestation">
-      <h3>Reign of the earliest attestation<sup class="type-dp" title="data property">dp</sup>
+      <h3>reign of earliest attestestation<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://www.normansicily.org/nsp#reignOfEarliestAttestestation</p>
+      <div class="comment">
+         <span class="markdown">The reign during which the earliest attestation occurred</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http:///www.normansicily.org/nsp#">http:///www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Place" title="http://www.normansicily.org/nsp#Place">Place</a>
+               <a href="#Place" title="http://www.normansicily.org/nsp#Place">place</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://n2t.net/ark:/99152/p0qwjcd">p0qwjcd</span>
             </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#https://www.normansicily.org/nsp#reignOfEarliestAttestestation">named individual</a>
-            </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="seismicClassId">
-      <h3>Seismic Classification<sup class="type-dp" title="data property">dp</sup>
+      <h3>seismic class id<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.normansicily.org/nsp#seismicClassId</p>
+      <div class="comment">
+         <span class="markdown">Seismic classifcation. See http://www.protezionecivile.gov.it/jcms/en/classificazione.wp</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
       <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Location" title="http://www.normansicily.org/nsp#Location">Location</a>
+               <a href="#Location" title="http://www.normansicily.org/nsp#Location">location</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
-            <dd>{ "1" , "2" , "3" , "4" }</dd>
-            <dt>is also defined as</dt>
             <dd>
-               <a href="#seismicClassId">named individual</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
+            <dd>{ "1" , "2" , "3" , "4" }</dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="type">
-      <h3>Type<sup class="type-dp" title="data property">dp</sup>
+      <h3>type<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.normansicily.org/nsp#type</p>
+      <div class="comment">
+         <span class="markdown">The type of a Place</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.normansicily.org/nsp#">http://www.normansicily.org/nsp#</a>
+         </dd>
+      </dl>
       <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Place" title="http://www.normansicily.org/nsp#Place">Place</a>
+               <a href="#Place" title="http://www.normansicily.org/nsp#Place">place</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#type">named individual</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
@@ -1171,45 +1642,9 @@ This section provides details for each class and property defined by The Norman 
    <h3 id="namedindividuals" class="list">Named Individuals</h3>
    <ul class="hlist">
       <li>
-         <a href="#archaeologicalRemains"
-            title="http://www.normansicily.org/nsp#archaeologicalRemains">Archaeological Remains</a>
-      </li>
-      <li>
-         <a href="#contains" title="http://www.normansicily.org/nsp#contains">contains</a>
-      </li>
-      <li>
-         <a href="#dedication" title="http://www.normansicily.org/nsp#dedication">Dedication</a>
-      </li>
-      <li>
-         <a href="#earliestAttestation"
-            title="http://www.normansicily.org/nsp#earliestAttestation">Earliest Attestation</a>
-      </li>
-      <li>
-         <a href="#maxEarliestAttestation"
-            title="http://www.normansicily.org/nsp#maxEarliestAttestation">Earliest Year of Earliest Attestation</a>
-      </li>
-      <li>
-         <a href="#isFounderOf" title="http://www.normansicily.org/nsp#isFounderOf">founded</a>
-      </li>
-      <li>
          <a href="#hayesd" title="http://www.normansicily.org/nsp#hayesd">
             <span>hayesd</span>
          </a>
-      </li>
-      <li>
-         <a href="#isIn" title="http://www.normansicily.org/nsp#isIn">is in</a>
-      </li>
-      <li>
-         <a href="#hasLocation" title="http://www.normansicily.org/nsp#hasLocation">is located at</a>
-      </li>
-      <li>
-         <a href="#isNear" title="http://www.normansicily.org/nsp#isNear">is near</a>
-      </li>
-      <li>
-         <a href="#isLocationOf" title="http://www.normansicily.org/nsp#isLocationOf">is the location of</a>
-      </li>
-      <li>
-         <a href="#isNameOf" title="http://www.normansicily.org/nsp#isNameOf">is the name of</a>
       </li>
       <li>
          <a href="#joephayes" title="http://www.normansicily.org/nsp#joephayes">
@@ -1217,186 +1652,11 @@ This section provides details for each class and property defined by The Norman 
          </a>
       </li>
       <li>
-         <a href="#minEarliestAttestation"
-            title="http://www.normansicily.org/nsp#minEarliestAttestation">Latest Year of Earliest Attestation</a>
-      </li>
-      <li>
-         <a href="#Location" title="http://www.normansicily.org/nsp#Location">Location</a>
-      </li>
-      <li>
-         <a href="#locationCategory" title="http://www.normansicily.org/nsp#locationCategory">Location Category</a>
-      </li>
-      <li>
-         <a href="#Monastery" title="http://www.normansicily.org/nsp#Monastery">Monastery</a>
-      </li>
-      <li>
-         <a href="#Name" title="http://www.normansicily.org/nsp#Name">Name</a>
-      </li>
-      <li>
          <a href="#nsp" title="http://www.normansicily.org/nsp#nsp">
             <span>nsp</span>
          </a>
       </li>
-      <li>
-         <a href="#order" title="http://www.normansicily.org/nsp#order">Order</a>
-      </li>
-      <li>
-         <a href="#Place" title="http://www.normansicily.org/nsp#Place">Place</a>
-      </li>
-      <li>
-         <a href="#placeCategory" title="http://www.normansicily.org/nsp#placeCategory">Place Category</a>
-      </li>
-      <li>
-         <a href="#positionalAccuracyAssessment"
-            title="http://www.normansicily.org/nsp#positionalAccuracyAssessment">Positional Accuracy Assessment</a>
-      </li>
-      <li>
-         <a href="#isPreferred" title="http://www.normansicily.org/nsp#isPreferred">Preferred</a>
-      </li>
-      <li>
-         <a href="#/rankAtFoundaion" title="http://www.normansicily.org/nsp/rankAtFoundaion">Rank when founded</a>
-      </li>
-      <li>
-         <a href="#https://www.normansicily.org/nsp#reignOfEarliestAttestestation"
-            title="https://www.normansicily.org/nsp#reignOfEarliestAttestestation">Reign of the earliest attestation</a>
-      </li>
-      <li>
-         <a href="#seismicClassId" title="http://www.normansicily.org/nsp#seismicClassId">Seismic Classification</a>
-      </li>
-      <li>
-         <a href="#type" title="http://www.normansicily.org/nsp#type">Type</a>
-      </li>
-      <li>
-         <a href="#wasContainedBy" title="http://www.normansicily.org/nsp#wasContainedBy">was contained in</a>
-      </li>
-      <li>
-         <a href="#hasFounder" title="http://www.normansicily.org/nsp#hasFounder">was founded by</a>
-      </li>
-      <li>
-         <a href="#wasIn" title="http://www.normansicily.org/nsp#wasIn">was in</a>
-      </li>
-      <li>
-         <a href="#hasName" title="http://www.normansicily.org/nsp#hasName">was named</a>
-      </li>
    </ul>
-   <div class="entity" id="archaeologicalRemains">
-      <h3>Archaeological Remains<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#archaeologicalRemains</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"Archaeological Remains"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#archaeologicalRemains">data property</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="contains">
-      <h3>contains<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#contains</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"contains"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#contains">object property</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="dedication">
-      <h3>Dedication<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#dedication</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"Dedication"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#dedication">data property</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="earliestAttestation">
-      <h3>Earliest Attestation<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#earliestAttestation</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"Earliest Attestation"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>data property</dd>
-      </dl>
-   </div>
-   <div class="entity" id="maxEarliestAttestation">
-      <h3>Earliest Year of Earliest Attestation<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#maxEarliestAttestation</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"Earliest Year of Earliest Attestation"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#maxEarliestAttestation">data property</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="isFounderOf">
-      <h3>founded<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#isFounderOf</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"founded"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#isFounderOf">object property</a>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="hayesd">
       <h3>hayesd<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -1407,108 +1667,8 @@ This section provides details for each class and property defined by The Norman 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <span class="dotted" title="http://xmlns.com/foaf/0.1/Person">person</span>
+            <a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person">person</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="isIn">
-      <h3>is in<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#isIn</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"is in"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#isIn">object property</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="hasLocation">
-      <h3>is located at<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#hasLocation</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"is located at"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#hasLocation">object property</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="isNear">
-      <h3>is near<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#isNear</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"is near"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#isNear">object property</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="isLocationOf">
-      <h3>is the location of<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#isLocationOf</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"is the location of"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#isLocationOf">object property</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="isNameOf">
-      <h3>is the name of<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#isNameOf</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"is the name of"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#isNameOf">object property</a>
          </dd>
       </dl>
    </div>
@@ -1522,108 +1682,8 @@ This section provides details for each class and property defined by The Norman 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <span class="dotted" title="http://xmlns.com/foaf/0.1/Person">person</span>
+            <a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person">person</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="minEarliestAttestation">
-      <h3>Latest Year of Earliest Attestation<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#minEarliestAttestation</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"Latest Year of Earliest Attestation"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#minEarliestAttestation">data property</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="Location">
-      <h3>Location<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#Location</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"Location"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#Location">class</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="locationCategory">
-      <h3>Location Category<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#locationCategory</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"Location Category"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#locationCategory">data property</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="Monastery">
-      <h3>Monastery<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#Monastery</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"Monastery"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#Monastery">class</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="Name">
-      <h3>Name<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#Name</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"Name"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#Name">class</a>
          </dd>
       </dl>
    </div>
@@ -1639,266 +1699,6 @@ This section provides details for each class and property defined by The Norman 
          <dd>
             <span class="dotted" title="http://xmlns.com/foaf/0.1/Project">project</span>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="order">
-      <h3>Order<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#order</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"Order"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#order">data property</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="Place">
-      <h3>Place<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#Place</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"Place"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#Place">class</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="placeCategory">
-      <h3>Place Category<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#placeCategory</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"Place Category"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#placeCategory">data property</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="positionalAccuracyAssessment">
-      <h3>Positional Accuracy Assessment<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#positionalAccuracyAssessment</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"Positional Accuracy Assessment"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#positionalAccuracyAssessment">data property</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="isPreferred">
-      <h3>Preferred<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#isPreferred</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"Preferred"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#isPreferred">data property</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="/rankAtFoundaion">
-      <h3>Rank when founded<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp/rankAtFoundaion</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"Rank when founded"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#/rankAtFoundaion">data property</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="https://www.normansicily.org/nsp#reignOfEarliestAttestestation">
-      <h3>Reign of the earliest attestation<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://www.normansicily.org/nsp#reignOfEarliestAttestestation</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"Reign of the earliest attestation"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#https://www.normansicily.org/nsp#reignOfEarliestAttestestation">data property</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="seismicClassId">
-      <h3>Seismic Classification<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#seismicClassId</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"Seismic Classification"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#seismicClassId">data property</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="type">
-      <h3>Type<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#type</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"Type"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#type">data property</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="wasContainedBy">
-      <h3>was contained in<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#wasContainedBy</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"was contained in"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#wasContainedBy">object property</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="hasFounder">
-      <h3>was founded by<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#hasFounder</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"was founded by"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#hasFounder">object property</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="wasIn">
-      <h3>was in<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#wasIn</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"was in"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#wasIn">object property</a>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="hasName">
-      <h3>was named<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.normansicily.org/nsp#hasName</p>
-      <dl class="description">
-         <dt>has facts</dt>
-         <dd>
-            <a href="#http://www.w3.org/2000/01/rdf-schema#label" title="http://www.w3.org/2000/01/rdf-schema#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"was named"@en</span>
-         </dd>
-         <dt>is also defined as</dt>
-         <dd>
-            <a href="#hasName">object property</a>
          </dd>
       </dl>
    </div>

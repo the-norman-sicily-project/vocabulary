@@ -2,22 +2,265 @@
 <h2 id="changes" class="list">Changes from last version</h2>
 <h3 id="changeClass" class="list">Classes</h3>
 <p><u>Modified classes</u></p>
-<ul><li><a href="##Location">http://www.normansicily.org/nsp#Location</a>
+<ul><li><a href="##Place">http://www.normansicily.org/nsp#Place</a>
 <ul>
-<li>Added: SubClass of http://www.w3.org/2002/07/owl#Thing</li>
+<li>Added: rdfs:isDefinedBy http://www.normansiicly.org/nsp#</li>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://www.normansicily.org/nsp#Founder&gt; &lt;http://www.normansicily.org/nsp#Place&gt;)</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy http://www.normansicily.org/nsp#</li>
 </ul>
 </li>
-<li><a href="##Place">http://www.normansicily.org/nsp#Place</a>
+<li><a href="##Location">http://www.normansicily.org/nsp#Location</a>
 <ul>
-<li>Added: SubClass of http://www.w3.org/2002/07/owl#Thing</li>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://www.normansicily.org/nsp#Founder&gt; &lt;http://www.normansicily.org/nsp#Location&gt;)</li>
+</ul>
+</li>
+<li><a href="##Founder">http://www.normansicily.org/nsp#Founder</a>
+<ul>
+<li>Added: SubClass of http://xmlns.com/foaf/0.1/Person</li>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://www.normansicily.org/nsp#Founder&gt; &lt;http://www.normansicily.org/nsp#Name&gt;)</li>
+<li>Added: rdfs:isDefinedBy http://www.normansicily.org/nsp#</li>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://www.normansicily.org/nsp#Founder&gt; &lt;http://www.normansicily.org/nsp#Location&gt;)</li>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://www.normansicily.org/nsp#Founder&gt; &lt;http://www.normansicily.org/nsp#Place&gt;)</li>
+<li>Added: rdfs:comment "A founder or founding member of an organization or place"@en</li>
+</ul>
+<ul>
+<li>Deleted: SubClass of http://xmlns.com/foaf/0.1/Agent</li>
+</ul>
+</li>
+<li><a href="#http://xmlns.com/foaf/0.1/Person">http://xmlns.com/foaf/0.1/Person</a>
+<ul>
+<li>Added: SubClass of http://xmlns.com/foaf/0.1/Agent</li>
+</ul>
+</li>
+<li><a href="#http://dbpedia.org/ontology/HistoricalProvince">http://dbpedia.org/ontology/HistoricalProvince</a>
+<ul>
+<li>Added: SubClass of http://dbpedia.org/ontology/Province</li>
 </ul>
 </li>
 <li><a href="##Name">http://www.normansicily.org/nsp#Name</a>
 <ul>
-<li>Added: SubClass of http://www.w3.org/2002/07/owl#Thing</li>
+<li>Added: rdfs:comment "A Name denotes a word which refers to a Place or a Location"@en</li>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://www.normansicily.org/nsp#Founder&gt; &lt;http://www.normansicily.org/nsp#Name&gt;)</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "A Name denotes a word which refers to a Place"@en</li>
 </ul>
 </li>
-</ul><p><u>Added classes</u></p>
-<ul><li><a href="#http://www.w3.org/2002/07/owl#Thing">http://www.w3.org/2002/07/owl#Thing</a>
+</ul><h3 id="changeProp" class="list">Object Properties</h3>
+<p><u>Modified properties</u></p>
+<ul><li><a href="##isNear">http://www.normansicily.org/nsp#isNear</a>
+<ul>
+<li>Added: rdfs:comment "A Location is nearby, or contained in, a Municipality"@en</li>
+</ul>
+</li>
+<li><a href="##hasName">http://www.normansicily.org/nsp#hasName</a>
+<ul>
+<li>Added: rdfs:comment "A Location or Place has Name"@en</li>
+</ul>
+</li>
+<li><a href="##contains">http://www.normansicily.org/nsp#contains</a>
+<ul>
+<li>Added: rdfs:comment "A province (administrative grouping) contains a location"@en</li>
+</ul>
+</li>
+<li><a href="##isNameOf">http://www.normansicily.org/nsp#isNameOf</a>
+<ul>
+<li>Added: rdfs:comment "A Name is known for a Location or Place"@en</li>
+</ul>
+</li>
+<li><a href="##isFounderOf">http://www.normansicily.org/nsp#isFounderOf</a>
+<ul>
+<li>Added: rdfs:comment "A Founder (Person) founded a Place"@en</li>
+</ul>
+</li>
+<li><a href="##isIn">http://www.normansicily.org/nsp#isIn</a>
+<ul>
+<li>Added: rdfs:comment "A location is contained in a province (administrative grouping)"@en</li>
+</ul>
+</li>
+<li><a href="##wasContainedBy">http://www.normansicily.org/nsp#wasContainedBy</a>
+<ul>
+<li>Added: rdfs:comment "A historical province contains a Location"@en</li>
+</ul>
+</li>
+<li><a href="##isLocationOf">http://www.normansicily.org/nsp#isLocationOf</a>
+<ul>
+<li>Added: rdfs:comment "A Location is known for a Name or Place"@en</li>
+</ul>
+</li>
+<li><a href="##hasFounder">http://www.normansicily.org/nsp#hasFounder</a>
+<ul>
+<li>Added: rdfs:comment "A Place has one or more founders"@en</li>
+</ul>
+</li>
+<li><a href="##wasIn">http://www.normansicily.org/nsp#wasIn</a>
+<ul>
+<li>Added: rdfs:comment "A Location was contained in a historical province"@en</li>
+</ul>
+</li>
+<li><a href="##hasLocation">http://www.normansicily.org/nsp#hasLocation</a>
+<ul>
+<li>Added: rdfs:comment "A Name or a Place has a known Location"@en</li>
+</ul>
+</li>
+</ul><p><u>Added properties</u></p>
+<ul><li><a href="##hasChildren">http://www.normansicily.org/nsp#hasChildren</a>
+<ul>
+<li>Added: InverseObjectProperties InverseObjectProperties(&lt;http://www.normansicily.org/nsp#hasChildren&gt; &lt;http://www.normansicily.org/nsp#isChildOf&gt;)</li>
+<li>Added: Range http://www.normansicily.org/nsp#Monastery</li>
+<li>Added: domain http://www.normansicily.org/nsp#Monastery</li>
+</ul>
+</li>
+<li><a href="##isParentOf">http://www.normansicily.org/nsp#isParentOf</a>
+<ul>
+<li>Added: InverseObjectProperties InverseObjectProperties(&lt;http://www.normansicily.org/nsp#hasParent&gt; &lt;http://www.normansicily.org/nsp#isParentOf&gt;)</li>
+<li>Added: Range http://www.normansicily.org/nsp#Monastery</li>
+<li>Added: domain http://www.normansicily.org/nsp#Monastery</li>
+</ul>
+</li>
+<li><a href="##hasParent">http://www.normansicily.org/nsp#hasParent</a>
+<ul>
+<li>Added: InverseObjectProperties InverseObjectProperties(&lt;http://www.normansicily.org/nsp#hasParent&gt; &lt;http://www.normansicily.org/nsp#isParentOf&gt;)</li>
+<li>Added: domain http://www.normansicily.org/nsp#Monastery</li>
+<li>Added: Range http://www.normansicily.org/nsp#Monastery</li>
+</ul>
+</li>
+<li><a href="##isChildOf">http://www.normansicily.org/nsp#isChildOf</a>
+<ul>
+<li>Added: InverseObjectProperties InverseObjectProperties(&lt;http://www.normansicily.org/nsp#hasChildren&gt; &lt;http://www.normansicily.org/nsp#isChildOf&gt;)</li>
+<li>Added: Range http://www.normansicily.org/nsp#Monastery</li>
+<li>Added: domain http://www.normansicily.org/nsp#Monastery</li>
+</ul>
+</li>
+</ul><h3 id="changeDataProp" class="list">Data Properties</h3>
+<p><u>Modified data properties</u></p>
+<ul><li><a href="##type">http://www.normansicily.org/nsp#type</a>
+<ul>
+<li>Added: FunctionalDataProperty FunctionalDataProperty(&lt;http://www.normansicily.org/nsp#type&gt;)</li>
+<li>Added: rdfs:comment "The type of a Place"@en</li>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+</ul>
+<ul>
+<li>Deleted: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Deleted: rdfs:comment "The type of the Place"@en</li>
+</ul>
+</li>
+<li><a href="##order">http://www.normansicily.org/nsp#order</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+</ul>
+<ul>
+<li>Deleted: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+<li><a href="##seismicClassId">http://www.normansicily.org/nsp#seismicClassId</a>
+<ul>
+<li>Added: rdfs:seeAlso http://www.protezionecivile.gov.it/jcms/en/classificazione.wp</li>
+<li>Added: FunctionalDataProperty FunctionalDataProperty(&lt;http://www.normansicily.org/nsp#seismicClassId&gt;)</li>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: rdfs:comment "Seismic classifcation. See http://www.protezionecivile.gov.it/jcms/en/classificazione.wp"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Seismic classifcation as per http://www.protezionecivile.gov.it/jcms/en/classificazione.wp"@en</li>
+</ul>
+</li>
+<li><a href="##minEarliestAttestation">http://www.normansicily.org/nsp#minEarliestAttestation</a>
+<ul>
+<li>Added: rdfs:comment "The earliest year an attestation could have been made"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "The latest year an attestation could have been made"@en</li>
+</ul>
+</li>
+<li><a href="#http://schema.org/honorificPrefix">http://schema.org/honorificPrefix</a>
+<ul>
+<li>Added: Domain http://xmlns.com/foaf/0.1/Person</li>
+<li>Added: Range http://schema.org/Text</li>
+</ul>
+<ul>
+<li>Deleted: Domain http://www.normansicily.org/nsp#Founder</li>
+</ul>
+</li>
+<li><a href="##locationCategory">http://www.normansicily.org/nsp#locationCategory</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+</ul>
+</li>
+<li><a href="##dedication">http://www.normansicily.org/nsp#dedication</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+</ul>
+<ul>
+<li>Deleted: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+<li><a href="##maxEarliestAttestation">http://www.normansicily.org/nsp#maxEarliestAttestation</a>
+<ul>
+<li>Added: rdfs:comment "The latest year an attestation could have been made"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "The earliest year an attestation could have been made"@en</li>
+</ul>
+</li>
+<li><a href="#http://xmlns.com/foaf/0.1/gender">http://xmlns.com/foaf/0.1/gender</a>
+<ul>
+<li>Added: FunctionalDataProperty FunctionalDataProperty(&lt;http://xmlns.com/foaf/0.1/gender&gt;)</li>
+<li>Added: Domain http://xmlns.com/foaf/0.1/Person</li>
+</ul>
+</li>
+<li><a href="##positionalAccuracyAssessment">http://www.normansicily.org/nsp#positionalAccuracyAssessment</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+</ul>
+</li>
+<li><a href="##isPreferred">http://www.normansicily.org/nsp#isPreferred</a>
+<ul>
+<li>Added: rdfs:comment "If true, then it denotes that the name is the preferred one for the Place or Location"@en</li>
+<li>Added: FunctionalDataProperty FunctionalDataProperty(&lt;http://www.normansicily.org/nsp#isPreferred&gt;)</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "If true, then denotes the preferred name of a place"@en</li>
+</ul>
+</li>
+<li><a href="#https://www.normansicily.org/nsp#reignOfEarliestAttestestation">https://www.normansicily.org/nsp#reignOfEarliestAttestestation</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http:///www.normansicily.org/nsp#</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy http://www.normansicily.org/nsp#</li>
+</ul>
+</li>
+<li><a href="##placeCategory">http://www.normansicily.org/nsp#placeCategory</a>
+<ul>
+<li>Added: rdfs:seeAlso http://www.getty.edu/research/tools/vocabularies/aat/</li>
+</ul>
+</li>
+<li><a href="##archaeologicalRemains">http://www.normansicily.org/nsp#archaeologicalRemains</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+</ul>
+<ul>
+<li>Deleted: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+<li><a href="#http://www.w3.org/2000/01/rdf-schema#label">http://www.w3.org/2000/01/rdf-schema#label</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+</ul>
+<ul>
+<li>Deleted: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+</ul><p><u>Added data properties</u></p>
+<ul><li><a href="#/rankAtFoundation">http://www.normansicily.org/nsp/rankAtFoundation</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: Domain http://www.normansicily.org/nsp#Monastery</li>
+</ul>
+</li>
+</ul><p><u>Deleted data properties</u></p>
+<ul><li><a href="#/rankAtFoundaion">http://www.normansicily.org/nsp/rankAtFoundaion</a>
 </li>
 </ul></div>

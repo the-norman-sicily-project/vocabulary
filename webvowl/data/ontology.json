@@ -7,7 +7,7 @@
       "en" : "The Norman Sicily Project Vocabulary"
     },
     "iri" : "http://www.normansicily.org/nsp",
-    "version" : "0.2",
+    "version" : "0.3",
     "author" : [ "http://www.normansicily.org/nsp#hayesd", "http://www.normansicily.org/nsp#joephayes" ],
     "description" : {
       "en" : "Vocabulary for describing the places, locations and names of Norman Sicily that are available through The Norman Sicily Project site, http://www.normansicily.org/"
@@ -16,7 +16,7 @@
       "priorVersion" : [ {
         "identifier" : "priorVersion",
         "language" : "undefined",
-        "value" : "http://www.normansicily.org/nsp/0.1",
+        "value" : "http://www.normansicily.org/nsp/0.2",
         "type" : "iri"
       } ],
       "license" : [ {
@@ -54,28 +54,28 @@
         "value" : "https://github.com/the-norman-sicily-project/vocabulary/commits/master",
         "type" : "iri"
       } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2018-06-01",
-        "type" : "label"
-      } ],
       "publisher" : [ {
         "identifier" : "publisher",
         "language" : "undefined",
         "value" : "http://www.normansicily.org/nsp#nsp",
         "type" : "iri"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
+      "modified" : [ {
+        "identifier" : "modified",
         "language" : "undefined",
-        "value" : "0.2",
+        "value" : "2018-06-10",
         "type" : "label"
       } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
         "value" : "http://www.normansicily.org/nsp",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.3",
         "type" : "label"
       } ],
       "title" : [ {
@@ -95,120 +95,120 @@
   "namespace" : [ ],
   "metrics" : {
     "classCount" : 12,
-    "objectPropertyCount" : 11,
+    "objectPropertyCount" : 15,
     "datatypePropertyCount" : 21,
-    "individualCount" : 32
+    "individualCount" : 3
   },
   "class" : [ {
-    "id" : "0",
+    "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
+    "id" : "5",
     "type" : "owl:Class"
-  }, {
-    "id" : "23",
-    "type" : "rdfs:Literal"
   }, {
     "id" : "24",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "25",
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
     "type" : "owl:Class"
   }, {
-    "id" : "22",
+    "id" : "26",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "13",
+    "id" : "17",
     "type" : "owl:Thing"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Literal"
   }, {
     "id" : "32",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "33",
-    "type" : "rdfs:Literal"
+    "id" : "35",
+    "type" : "rdfs:Datatype"
   }, {
-    "id" : "11",
+    "id" : "36",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
     "type" : "owl:Class"
   }, {
-    "id" : "38",
-    "type" : "rdfs:Datatype"
-  }, {
     "id" : "41",
-    "type" : "rdfs:Datatype"
+    "type" : "rdfs:Literal"
   }, {
     "id" : "44",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "48",
     "type" : "rdfs:Literal"
   }, {
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "31",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "20",
-    "type" : "owl:Class"
-  }, {
     "id" : "18",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "46",
+    "id" : "23",
     "type" : "owl:Class"
-  }, {
-    "id" : "47",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "50",
-    "type" : "rdfs:Datatype"
   }, {
     "id" : "51",
     "type" : "rdfs:Datatype"
   }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
     "id" : "55",
-    "type" : "owl:Class"
+    "type" : "rdfs:Literal"
   }, {
-    "id" : "56",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "40",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "30",
-    "type" : "owl:Class"
-  }, {
-    "id" : "7",
-    "type" : "owl:Class"
-  }, {
-    "id" : "59",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "60",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "49",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "16",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "35",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "62",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "63",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "14",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "3",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "53",
-    "type" : "owl:unionOf"
+    "id" : "38",
+    "type" : "rdfs:Literal"
   }, {
     "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "57",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "64",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "65",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "9",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -219,7 +219,7 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.normansicily.org/nsp#",
+        "value" : "http://www.normansiicly.org/nsp#",
         "type" : "iri"
       } ]
     },
@@ -230,7 +230,7 @@
     "comment" : {
       "en" : "A Place refers to a locus for which the Location may or may not be known. It may also have multiple Names."
     },
-    "id" : "0"
+    "id" : "6"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Agent",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -238,22 +238,29 @@
     "label" : {
       "IRI-based" : "Agent"
     },
-    "subClasses" : [ "7" ],
+    "subClasses" : [ "4" ],
     "attributes" : [ "external" ],
-    "id" : "9"
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "23",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
+    "id" : "5"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "id" : "24",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://n2t.net/ark:/99152/p0qwjcd",
+    "baseIri" : "http://n2t.net/ark:/99152",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "p0qwjcd"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "decimal"
     }
   }, {
     "iri" : "http://dbpedia.org/ontology/HistoricalProvince",
@@ -263,10 +270,11 @@
       "IRI-based" : "HistoricalProvince"
     },
     "attributes" : [ "external" ],
-    "id" : "25"
+    "id" : "29",
+    "superClasses" : [ "23" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "22",
+    "id" : "26",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -274,23 +282,39 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "13",
+    "id" : "17",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
     "id" : "32",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "33",
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "35",
     "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "decimal"
     }
   }, {
     "iri" : "http://dbpedia.org/ontology/Municipality",
@@ -300,24 +324,27 @@
       "IRI-based" : "Municipality"
     },
     "attributes" : [ "external" ],
-    "id" : "11"
+    "id" : "15"
   }, {
-    "iri" : "http://n2t.net/ark:/99152/p0qwjcd",
-    "baseIri" : "http://n2t.net/ark:/99152",
-    "id" : "38",
-    "label" : {
-      "IRI-based" : "p0qwjcd"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
     "id" : "41",
     "label" : {
-      "IRI-based" : "decimal"
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
     "id" : "44",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "48",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -341,13 +368,13 @@
       "en" : "A monastery is the habitation of monks or nuns"
     },
     "id" : "1",
-    "superClasses" : [ "0" ]
+    "superClasses" : [ "6" ]
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "iri" : "http://www.w3.org/2001/XMLSchema#gYear",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "31",
+    "id" : "18",
     "label" : {
-      "IRI-based" : "string"
+      "IRI-based" : "gYear"
     }
   }, {
     "iri" : "http://dbpedia.org/ontology/Province",
@@ -356,14 +383,15 @@
     "label" : {
       "IRI-based" : "Province"
     },
+    "subClasses" : [ "29" ],
     "attributes" : [ "external" ],
-    "id" : "20"
+    "id" : "23"
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "iri" : "http://www.w3.org/2001/XMLSchema#gYear",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "18",
+    "id" : "51",
     "label" : {
-      "IRI-based" : "string"
+      "IRI-based" : "gYear"
     }
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Project",
@@ -394,27 +422,29 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "46"
+    "id" : "52"
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "47",
+    "id" : "43",
     "label" : {
-      "IRI-based" : "decimal"
+      "IRI-based" : "anyURI"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "50",
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "55",
     "label" : {
-      "IRI-based" : "decimal"
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "51",
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "38",
     "label" : {
-      "IRI-based" : "string"
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
     }
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Person",
@@ -470,21 +500,24 @@
         "IRI-based" : "hayesd"
       }
     } ],
+    "subClasses" : [ "12" ],
     "attributes" : [ "external" ],
-    "id" : "55"
+    "id" : "4",
+    "superClasses" : [ "5" ]
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "56",
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "47",
     "label" : {
-      "IRI-based" : "string"
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "40",
+    "id" : "59",
     "label" : {
-      "IRI-based" : "anyURI"
+      "IRI-based" : "boolean"
     }
   }, {
     "iri" : "http://www.normansicily.org/nsp#Name",
@@ -502,80 +535,71 @@
       "IRI-based" : "Name"
     },
     "comment" : {
-      "en" : "A Name denotes a word which refers to a Place"
+      "en" : "A Name denotes a word which refers to a Place or a Location"
     },
-    "id" : "30"
+    "id" : "34"
   }, {
     "iri" : "http://www.normansicily.org/nsp#Founder",
     "baseIri" : "http://www.normansicily.org/nsp",
     "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.normansicily.org/nsp#",
+        "type" : "iri"
+      } ]
+    },
     "label" : {
       "IRI-based" : "Founder"
     },
-    "id" : "7",
-    "superClasses" : [ "9" ]
+    "comment" : {
+      "en" : "A founder or founding member of an organization or place"
+    },
+    "id" : "12",
+    "superClasses" : [ "4" ]
   }, {
     "instances" : 0,
-    "union" : [ "30", "0" ],
+    "union" : [ "34", "6" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "59"
+    "id" : "8"
   }, {
     "instances" : 0,
-    "union" : [ "4", "0" ],
+    "union" : [ "9", "6" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "60"
+    "id" : "57"
+  }, {
+    "instances" : 0,
+    "union" : [ "34", "6" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "64"
+  }, {
+    "instances" : 0,
+    "union" : [ "9", "6" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "65"
   }, {
     "iri" : "http://purl.org/dc/terms/RFC5646",
     "baseIri" : "http://purl.org/dc/terms",
-    "id" : "49",
+    "id" : "54",
     "label" : {
       "IRI-based" : "RFC5646"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "16",
+    "iri" : "http://schema.org/Text",
+    "baseIri" : "http://schema.org",
+    "id" : "66",
     "label" : {
-      "IRI-based" : "string"
+      "IRI-based" : "Text"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "35",
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "20",
     "label" : {
-      "IRI-based" : "string"
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
     }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "62",
-    "label" : {
-      "IRI-based" : "boolean"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#gYear",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "63",
-    "label" : {
-      "IRI-based" : "gYear"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#gYear",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "14",
-    "label" : {
-      "IRI-based" : "gYear"
-    }
-  }, {
-    "instances" : 0,
-    "union" : [ "30", "0" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "3"
-  }, {
-    "instances" : 0,
-    "union" : [ "4", "0" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "53"
   }, {
     "iri" : "http://www.normansicily.org/nsp#Location",
     "baseIri" : "http://www.normansicily.org/nsp",
@@ -594,116 +618,170 @@
     "comment" : {
       "en" : "A Location represents a physical location on the Earth's surface"
     },
-    "id" : "4"
+    "id" : "9"
   } ],
   "property" : [ {
-    "id" : "2",
+    "id" : "0",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "6",
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "10",
+    "id" : "11",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "12",
-    "type" : "owl:datatypeProperty"
+    "id" : "14",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "15",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "17",
+    "id" : "16",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "19",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "21",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "26",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "27",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "28",
+    "id" : "22",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "29",
+    "id" : "25",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "34",
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "36",
+    "id" : "2",
     "type" : "owl:objectProperty"
   }, {
     "id" : "37",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "42",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "43",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "45",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "48",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "52",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "57",
+    "id" : "46",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "58",
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "61",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "8",
-    "type" : "owl:objectProperty"
+    "id" : "62",
+    "type" : "owl:disjointWith"
   }, {
-    "id" : "64",
+    "id" : "63",
     "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "65",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "66",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "54",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "67",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "68",
-    "type" : "owl:datatypeProperty"
+    "id" : "13",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "69",
     "type" : "owl:datatypeProperty"
   }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "70",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "71",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "72",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "5",
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "58",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "http://www.normansicily.org/nsp#hasLocation",
-    "inverse" : "5",
+    "iri" : "http://www.normansicily.org/nsp#hasParent",
+    "inverse" : "2",
     "baseIri" : "http://www.normansicily.org/nsp",
-    "range" : "4",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.normansicily.org/nsp#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasParent"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "A Monastery has a Motherhouse"
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.normansicily.org/nsp#hasLocation",
+    "inverse" : "10",
+    "baseIri" : "http://www.normansicily.org/nsp",
+    "range" : "9",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -715,14 +793,17 @@
     "label" : {
       "IRI-based" : "hasLocation"
     },
-    "domain" : "3",
+    "domain" : "8",
+    "comment" : {
+      "en" : "A Name or a Place has a known Location"
+    },
     "attributes" : [ "object" ],
-    "id" : "2"
+    "id" : "7"
   }, {
     "iri" : "http://www.normansicily.org/nsp#hasFounder",
-    "inverse" : "8",
+    "inverse" : "13",
     "baseIri" : "http://www.normansicily.org/nsp",
-    "range" : "7",
+    "range" : "12",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -734,13 +815,16 @@
     "label" : {
       "IRI-based" : "hasFounder"
     },
-    "domain" : "0",
+    "domain" : "6",
+    "comment" : {
+      "en" : "A Place has one or more founders"
+    },
     "attributes" : [ "object" ],
-    "id" : "6"
+    "id" : "11"
   }, {
     "iri" : "http://www.normansicily.org/nsp#isNear",
     "baseIri" : "http://www.normansicily.org/nsp",
-    "range" : "11",
+    "range" : "15",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -752,53 +836,14 @@
     "label" : {
       "IRI-based" : "isNear"
     },
-    "domain" : "4",
+    "domain" : "9",
+    "comment" : {
+      "en" : "A Location is nearby, or contained in, a Municipality"
+    },
     "attributes" : [ "object" ],
-    "id" : "10"
+    "id" : "14"
   }, {
     "iri" : "http://www.normansicily.org/nsp#minEarliestAttestation",
-    "baseIri" : "http://www.normansicily.org/nsp",
-    "range" : "14",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.normansicily.org/nsp#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "minEarliestAttestation"
-    },
-    "domain" : "13",
-    "comment" : {
-      "en" : "The latest year an attestation could have been made"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "12"
-  }, {
-    "iri" : "http://www.normansicily.org/nsp#archaeologicalRemains",
-    "baseIri" : "http://www.normansicily.org/nsp",
-    "range" : "16",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.normansicily.org/nsp#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "archaeologicalRemains"
-    },
-    "domain" : "4",
-    "comment" : {
-      "en" : "Describes the state of the visible remains at a Location"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "15"
-  }, {
-    "iri" : "http://www.normansicily.org/nsp/rankAtFoundaion",
     "baseIri" : "http://www.normansicily.org/nsp",
     "range" : "18",
     "annotations" : {
@@ -810,16 +855,16 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "rankAtFoundaion"
+      "IRI-based" : "minEarliestAttestation"
     },
-    "domain" : "1",
+    "domain" : "17",
     "comment" : {
-      "en" : "The rank of the Place when it was founded"
+      "en" : "The earliest year an attestation could have been made"
     },
-    "attributes" : [ "external", "datatype" ],
-    "id" : "17"
+    "attributes" : [ "datatype" ],
+    "id" : "16"
   }, {
-    "iri" : "http://www.normansicily.org/nsp#isIn",
+    "iri" : "http://www.normansicily.org/nsp#archaeologicalRemains",
     "baseIri" : "http://www.normansicily.org/nsp",
     "range" : "20",
     "annotations" : {
@@ -831,15 +876,44 @@
       } ]
     },
     "label" : {
+      "IRI-based" : "archaeologicalRemains"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Describes the state of the visible remains at a Location"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "19"
+  }, {
+    "range" : "6",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.normansicily.org/nsp#isIn",
+    "baseIri" : "http://www.normansicily.org/nsp",
+    "range" : "23",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.normansicily.org/nsp#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
       "IRI-based" : "isIn"
     },
-    "domain" : "4",
+    "domain" : "9",
+    "comment" : {
+      "en" : "A location is contained in a province (administrative grouping)"
+    },
     "attributes" : [ "object" ],
-    "id" : "19"
+    "id" : "22"
   }, {
     "iri" : "http://www.normansicily.org/nsp#earliestAttestation",
     "baseIri" : "http://www.normansicily.org/nsp",
-    "range" : "22",
+    "range" : "26",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -851,26 +925,16 @@
     "label" : {
       "IRI-based" : "earliestAttestation"
     },
-    "domain" : "13",
+    "domain" : "17",
     "comment" : {
       "en" : "The earliest mention of a Place in a source"
     },
     "attributes" : [ "datatype" ],
-    "id" : "21"
-  }, {
-    "range" : "9",
-    "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "26"
-  }, {
-    "range" : "0",
-    "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "27"
+    "id" : "25"
   }, {
     "iri" : "http://www.normansicily.org/nsp#wasIn",
     "baseIri" : "http://www.normansicily.org/nsp",
-    "range" : "25",
+    "range" : "29",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -882,23 +946,47 @@
     "label" : {
       "IRI-based" : "wasIn"
     },
-    "domain" : "4",
+    "domain" : "9",
+    "comment" : {
+      "en" : "A Location was contained in a historical province"
+    },
     "attributes" : [ "object" ],
-    "id" : "28"
+    "id" : "31"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#label",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "range" : "31",
+    "range" : "30",
     "label" : {
       "IRI-based" : "label"
     },
-    "domain" : "30",
+    "domain" : "34",
     "attributes" : [ "external", "datatype" ],
-    "id" : "29"
+    "id" : "33"
+  }, {
+    "iri" : "http://www.normansicily.org/nsp#isParentOf",
+    "baseIri" : "http://www.normansicily.org/nsp",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.normansicily.org/nsp#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isParentOf"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "A Monastery is the motherhouse to another Monastery"
+    },
+    "attributes" : [ "object" ],
+    "id" : "2"
   }, {
     "iri" : "http://www.normansicily.org/nsp#dedication",
     "baseIri" : "http://www.normansicily.org/nsp",
-    "range" : "35",
+    "range" : "38",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -915,12 +1003,12 @@
       "en" : "The person or thing to which a place was dedicated"
     },
     "attributes" : [ "datatype" ],
-    "id" : "34"
+    "id" : "37"
   }, {
     "iri" : "http://www.normansicily.org/nsp#wasContainedBy",
-    "inverse" : "28",
+    "inverse" : "31",
     "baseIri" : "http://www.normansicily.org/nsp",
-    "range" : "4",
+    "range" : "9",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -932,55 +1020,80 @@
     "label" : {
       "IRI-based" : "wasContainedBy"
     },
-    "domain" : "25",
+    "domain" : "29",
+    "comment" : {
+      "en" : "A historical province contains a Location"
+    },
     "attributes" : [ "object" ],
-    "id" : "36"
+    "id" : "39"
   }, {
     "iri" : "http://www.normansicily.org/nsp#seismicClassId",
     "baseIri" : "http://www.normansicily.org/nsp",
-    "range" : "32",
+    "range" : "41",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
         "value" : "http://www.normansicily.org/nsp#",
+        "type" : "iri"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://www.protezionecivile.gov.it/jcms/en/classificazione.wp",
         "type" : "iri"
       } ]
     },
     "label" : {
       "IRI-based" : "seismicClassId"
     },
-    "domain" : "4",
+    "domain" : "9",
     "comment" : {
-      "en" : "Seismic classifcation as per http://www.protezionecivile.gov.it/jcms/en/classificazione.wp"
+      "en" : "Seismic classifcation. See http://www.protezionecivile.gov.it/jcms/en/classificazione.wp"
     },
-    "attributes" : [ "datatype" ],
-    "id" : "37"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "40"
   }, {
     "iri" : "http://www.normansicily.org/nsp#placeCategory",
     "baseIri" : "http://www.normansicily.org/nsp",
-    "range" : "40",
+    "range" : "43",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
         "value" : "http://www.normansicily.org/nsp#",
         "type" : "iri"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://www.getty.edu/research/tools/vocabularies/aat/",
+        "type" : "iri"
       } ]
     },
     "label" : {
       "IRI-based" : "placeCategory"
     },
-    "domain" : "0",
+    "domain" : "6",
     "comment" : {
       "en" : "Category of the place as per the Getty AAT http://www.getty.edu/research/tools/vocabularies/aat/"
     },
     "attributes" : [ "datatype" ],
-    "id" : "39"
+    "id" : "42"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/gender",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "gender"
+    },
+    "domain" : "4",
+    "attributes" : [ "functional", "external", "datatype" ],
+    "id" : "45"
   }, {
     "iri" : "http://www.normansicily.org/nsp#locationCategory",
     "baseIri" : "http://www.normansicily.org/nsp",
-    "range" : "24",
+    "range" : "47",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -998,24 +1111,35 @@
     "label" : {
       "IRI-based" : "locationCategory"
     },
-    "domain" : "4",
+    "domain" : "9",
     "attributes" : [ "datatype" ],
-    "id" : "42"
+    "id" : "46"
   }, {
-    "iri" : "http://xmlns.com/foaf/0.1/gender",
-    "baseIri" : "http://xmlns.com/foaf/0.1",
-    "range" : "23",
-    "label" : {
-      "IRI-based" : "gender"
+    "iri" : "http://www.normansicily.org/nsp/rankAtFoundation",
+    "baseIri" : "http://www.normansicily.org/nsp",
+    "range" : "32",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.normansicily.org/nsp#",
+        "type" : "iri"
+      } ]
     },
-    "domain" : "13",
+    "label" : {
+      "IRI-based" : "rankAtFoundation"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "The rank of the Place when it was founded"
+    },
     "attributes" : [ "external", "datatype" ],
-    "id" : "43"
+    "id" : "49"
   }, {
     "iri" : "http://www.normansicily.org/nsp#contains",
-    "inverse" : "19",
+    "inverse" : "22",
     "baseIri" : "http://www.normansicily.org/nsp",
-    "range" : "4",
+    "range" : "9",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1027,24 +1151,27 @@
     "label" : {
       "IRI-based" : "contains"
     },
-    "domain" : "20",
+    "domain" : "23",
+    "comment" : {
+      "en" : "A province (administrative grouping) contains a location"
+    },
     "attributes" : [ "object" ],
-    "id" : "45"
+    "id" : "50"
   }, {
     "iri" : "http://purl.org/dc/terms/language",
     "baseIri" : "http://purl.org/dc/terms",
-    "range" : "49",
+    "range" : "54",
     "label" : {
       "IRI-based" : "language"
     },
-    "domain" : "30",
+    "domain" : "34",
     "attributes" : [ "external", "datatype" ],
-    "id" : "48"
+    "id" : "53"
   }, {
     "iri" : "http://www.normansicily.org/nsp#hasName",
-    "inverse" : "54",
+    "inverse" : "58",
     "baseIri" : "http://www.normansicily.org/nsp",
-    "range" : "30",
+    "range" : "34",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1056,13 +1183,16 @@
     "label" : {
       "IRI-based" : "hasName"
     },
-    "domain" : "53",
+    "domain" : "57",
+    "comment" : {
+      "en" : "A Location or Place has Name"
+    },
     "attributes" : [ "object" ],
-    "id" : "52"
+    "id" : "56"
   }, {
     "iri" : "http://www.normansicily.org/nsp#type",
     "baseIri" : "http://www.normansicily.org/nsp",
-    "range" : "56",
+    "range" : "48",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1074,12 +1204,12 @@
     "label" : {
       "IRI-based" : "type"
     },
-    "domain" : "0",
+    "domain" : "6",
     "comment" : {
-      "en" : "The type of the Place"
+      "en" : "The type of a Place"
     },
-    "attributes" : [ "datatype" ],
-    "id" : "57"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "60"
   }, {
     "iri" : "http://www.normansicily.org/nsp#positionalAccuracyAssessment",
     "baseIri" : "http://www.normansicily.org/nsp",
@@ -1095,26 +1225,53 @@
     "label" : {
       "IRI-based" : "positionalAccuracyAssessment"
     },
-    "domain" : "4",
+    "domain" : "9",
     "comment" : {
       "en" : "Assessment of accuracy of place's location"
     },
     "attributes" : [ "datatype" ],
-    "id" : "58"
+    "id" : "61"
+  }, {
+    "range" : "12",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
   }, {
     "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#long",
     "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
-    "range" : "41",
+    "range" : "28",
     "label" : {
       "IRI-based" : "long"
     },
-    "domain" : "4",
+    "domain" : "9",
     "attributes" : [ "external", "datatype" ],
-    "id" : "61"
+    "id" : "63"
+  }, {
+    "iri" : "http://www.normansicily.org/nsp#hasChildren",
+    "inverse" : "68",
+    "baseIri" : "http://www.normansicily.org/nsp",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.normansicily.org/nsp#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasChildren"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "A Monastery has one or more Monasteries subject to it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "67"
   }, {
     "iri" : "http://www.normansicily.org/nsp#isFounderOf",
     "baseIri" : "http://www.normansicily.org/nsp",
-    "range" : "0",
+    "range" : "6",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1126,13 +1283,16 @@
     "label" : {
       "IRI-based" : "isFounderOf"
     },
-    "domain" : "7",
+    "domain" : "12",
+    "comment" : {
+      "en" : "A Founder (Person) founded a Place"
+    },
     "attributes" : [ "object" ],
-    "id" : "8"
+    "id" : "13"
   }, {
     "iri" : "http://www.normansicily.org/nsp#order",
     "baseIri" : "http://www.normansicily.org/nsp",
-    "range" : "51",
+    "range" : "55",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1149,11 +1309,11 @@
       "en" : "An order is a group of person living under a religious rule"
     },
     "attributes" : [ "datatype" ],
-    "id" : "64"
+    "id" : "69"
   }, {
-    "iri" : "https://www.normansicily.org/nsp#reignOfEarliestAttestestation",
-    "baseIri" : "https://www.normansicily.org/nsp",
-    "range" : "38",
+    "iri" : "http://www.normansicily.org/nsp#isChildOf",
+    "baseIri" : "http://www.normansicily.org/nsp",
+    "range" : "1",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1163,28 +1323,59 @@
       } ]
     },
     "label" : {
+      "IRI-based" : "isChildOf"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "A Monastery is subject to another Monastery"
+    },
+    "attributes" : [ "object" ],
+    "id" : "68"
+  }, {
+    "range" : "12",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "70"
+  }, {
+    "range" : "12",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://www.normansicily.org/nsp#reignOfEarliestAttestestation",
+    "baseIri" : "https://www.normansicily.org/nsp",
+    "range" : "27",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http:///www.normansicily.org/nsp#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
       "IRI-based" : "reignOfEarliestAttestestation"
     },
-    "domain" : "0",
+    "domain" : "6",
     "comment" : {
       "en" : "The reign during which the earliest attestation occurred"
     },
     "attributes" : [ "external", "datatype" ],
-    "id" : "65"
+    "id" : "72"
   }, {
     "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
     "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
-    "range" : "47",
+    "range" : "35",
     "label" : {
       "IRI-based" : "lat"
     },
-    "domain" : "4",
+    "domain" : "9",
     "attributes" : [ "external", "datatype" ],
-    "id" : "66"
+    "id" : "73"
   }, {
     "iri" : "http://www.normansicily.org/nsp#isNameOf",
     "baseIri" : "http://www.normansicily.org/nsp",
-    "range" : "60",
+    "range" : "65",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1196,33 +1387,36 @@
     "label" : {
       "IRI-based" : "isNameOf"
     },
-    "domain" : "30",
+    "domain" : "34",
+    "comment" : {
+      "en" : "A Name is known for a Location or Place"
+    },
     "attributes" : [ "object" ],
-    "id" : "54"
+    "id" : "58"
   }, {
     "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#alt",
     "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
-    "range" : "50",
+    "range" : "36",
     "label" : {
       "IRI-based" : "alt"
     },
-    "domain" : "4",
+    "domain" : "9",
     "attributes" : [ "external", "datatype" ],
-    "id" : "67"
+    "id" : "74"
   }, {
     "iri" : "http://schema.org/honorificPrefix",
     "baseIri" : "http://schema.org",
-    "range" : "33",
+    "range" : "66",
     "label" : {
       "IRI-based" : "honorificPrefix"
     },
-    "domain" : "7",
+    "domain" : "4",
     "attributes" : [ "external", "datatype" ],
-    "id" : "68"
+    "id" : "75"
   }, {
     "iri" : "http://www.normansicily.org/nsp#maxEarliestAttestation",
     "baseIri" : "http://www.normansicily.org/nsp",
-    "range" : "63",
+    "range" : "51",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1234,35 +1428,14 @@
     "label" : {
       "IRI-based" : "maxEarliestAttestation"
     },
-    "domain" : "13",
+    "domain" : "17",
     "comment" : {
-      "en" : "The earliest year an attestation could have been made"
+      "en" : "The latest year an attestation could have been made"
     },
     "attributes" : [ "datatype" ],
-    "id" : "69"
+    "id" : "76"
   }, {
     "iri" : "http://www.normansicily.org/nsp#isPreferred",
-    "baseIri" : "http://www.normansicily.org/nsp",
-    "range" : "62",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.normansicily.org/nsp#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "isPreferred"
-    },
-    "domain" : "30",
-    "comment" : {
-      "en" : "If true, then denotes the preferred name of a place"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "70"
-  }, {
-    "iri" : "http://www.normansicily.org/nsp#isLocationOf",
     "baseIri" : "http://www.normansicily.org/nsp",
     "range" : "59",
     "annotations" : {
@@ -1274,10 +1447,44 @@
       } ]
     },
     "label" : {
+      "IRI-based" : "isPreferred"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "If true, then it denotes that the name is the preferred one for the Place or Location"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://www.normansicily.org/nsp#isLocationOf",
+    "baseIri" : "http://www.normansicily.org/nsp",
+    "range" : "64",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.normansicily.org/nsp#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
       "IRI-based" : "isLocationOf"
     },
-    "domain" : "4",
+    "domain" : "9",
+    "comment" : {
+      "en" : "A Location is known for a Name or Place"
+    },
     "attributes" : [ "object" ],
-    "id" : "5"
+    "id" : "10"
+  }, {
+    "range" : "4",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78"
+  }, {
+    "range" : "23",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
   } ]
 }
