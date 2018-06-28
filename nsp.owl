@@ -7,6 +7,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:nsp="http://www.normansicily.org/nsp#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cito="http://purl.org/spar/cito/"
      xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
      xmlns:dbo="http://dbpedia.org/ontology/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -172,6 +173,18 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/spar/cito/citesForInformation -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/citesForInformation">
+        <rdfs:domain rdf:resource="http://www.normansicily.org/nsp#Founder"/>
+        <rdfs:domain rdf:resource="http://www.normansicily.org/nsp#Location"/>
+        <rdfs:domain rdf:resource="http://www.normansicily.org/nsp#Name"/>
+        <rdfs:domain rdf:resource="http://www.normansicily.org/nsp#Place"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.normansicily.org/nsp"/>
+    </owl:ObjectProperty>
     
 
 
@@ -394,6 +407,17 @@
         <rdfs:domain rdf:resource="http://www.normansicily.org/nsp#Name"/>
         <rdfs:domain rdf:resource="http://www.normansicily.org/nsp#Place"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation">
+        <rdfs:domain rdf:resource="http://www.normansicily.org/nsp#Founder"/>
+        <rdfs:domain rdf:resource="http://www.normansicily.org/nsp#Location"/>
+        <rdfs:domain rdf:resource="http://www.normansicily.org/nsp#Name"/>
+        <rdfs:domain rdf:resource="http://www.normansicily.org/nsp#Place"/>
     </owl:DatatypeProperty>
     
 
