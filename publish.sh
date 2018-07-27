@@ -33,6 +33,13 @@
    put nsp.owl
    cd ..
    lcd ..
+   mkdir 0.4
+   cd 0.4
+   lcd 0.4
+   put ".htaccess"
+   put nsp.owl
+   cd ..
+   lcd ..
    mkdir provenance
    cd provenance
    lcd provenance

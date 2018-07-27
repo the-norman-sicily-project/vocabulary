@@ -7,21 +7,21 @@
 @base <http://www.normansicily.org/nsp> .
 
 <http://www.normansicily.org/nsp> rdf:type owl:Ontology ;
-                                   owl:versionIRI <http://www.normansicily.org/nsp/0.3> ;
+                                   owl:versionIRI <http://www.normansicily.org/nsp/0.4> ;
                                    <http://purl.org/dc/elements/1.1/creator> :hayesd ,
                                                                              :joephayes ;
                                    <http://purl.org/dc/elements/1.1/description> "Vocabulary for describing the places, locations and names of Norman Sicily that are available through The Norman Sicily Project site, http://www.normansicily.org/"@en ;
                                    <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> ;
                                    <http://purl.org/dc/elements/1.1/publisher> :nsp ;
                                    <http://purl.org/dc/elements/1.1/title> "The Norman Sicily Project Vocabulary"@en ;
-                                   <http://purl.org/dc/terms/created> "2018-05-30"^^xsd:string ;
-                                   <http://purl.org/dc/terms/modified> "2018-06-10"^^xsd:string ;
+                                   <http://purl.org/dc/terms/created> "2018-05-30"^^xsd:date ;
+                                   <http://purl.org/dc/terms/modified> "2018-07-27"^^xsd:date ;
                                    <http://purl.org/vocab/vann/changes> <https://github.com/the-norman-sicily-project/vocabulary/commits/master> ;
                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "nsp"^^xsd:string ;
                                    <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.normansicily.org/nsp"^^xsd:string ;
                                    rdfs:seeAlso <http://www.normansicily.org> ;
-                                   owl:priorVersion <http://www.normansicily.org/nsp/0.2> ;
-                                   owl:versionInfo 0.3 .
+                                   owl:priorVersion <http://www.normansicily.org/nsp/0.3> ;
+                                   owl:versionInfo 0.4 .
 
 #################################################################
 #    Annotation properties
@@ -105,6 +105,10 @@ xsd:gYear rdf:type rdfs:Datatype .
 #################################################################
 #    Object Properties
 #################################################################
+
+###  http://purl.org/spar/cito/citesForInformation
+<http://purl.org/spar/cito/citesForInformation> rdf:type owl:ObjectProperty .
+
 
 ###  http://www.normansicily.org/nsp#contains
 :contains rdf:type owl:ObjectProperty ;
@@ -253,6 +257,23 @@ xsd:gYear rdf:type rdfs:Datatype .
 #    Data properties
 #################################################################
 
+###  http://dbpedia.org/ontology/notes
+<http://dbpedia.org/ontology/notes> rdf:type owl:DatatypeProperty ;
+                                    rdfs:domain :Founder ,
+                                                :Location ,
+                                                :Name ,
+                                                :Place ;
+                                    rdfs:range xsd:string .
+
+
+###  http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain :Founder ,
+                                                             :Location ,
+                                                             :Name ,
+                                                             :Place .
+
+
 ###  http://purl.org/dc/terms/language
 <http://purl.org/dc/terms/language> rdf:type owl:DatatypeProperty ;
                                     rdfs:domain :Name ;
@@ -273,6 +294,15 @@ xsd:gYear rdf:type rdfs:Datatype .
                        rdfs:isDefinedBy : .
 
 
+###  http://www.normansicily.org/nsp#attestationTypes
+:attestationTypes rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Location ,
+                              :Name ,
+                              :Place ;
+                  rdfs:comment "Describes what kinds of evidence attest to the name, place or location"@en ;
+                  rdfs:isDefinedBy : .
+
+
 ###  http://www.normansicily.org/nsp#dedication
 :dedication rdf:type owl:DatatypeProperty ;
             rdfs:domain :Monastery ;
@@ -283,6 +313,10 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://www.normansicily.org/nsp#earliestAttestation
 :earliestAttestation rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Location ,
+                                 :Name ,
+                                 :Place ;
+                     rdfs:range rdfs:Literal ;
                      rdfs:comment "The earliest mention of a Place in a source"@en ;
                      rdfs:isDefinedBy : .
 
@@ -418,6 +452,10 @@ xsd:gYear rdf:type rdfs:Datatype .
 rdfs:label rdf:type owl:DatatypeProperty ;
            rdfs:domain :Name ;
            rdfs:range rdfs:Literal .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#seeAlso
+rdfs:seeAlso rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#alt
