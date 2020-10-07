@@ -1,5 +1,7 @@
 #!/usr/local/bin/bash
 
+set -e
+
 java -jar widoco-1.4.3-jar-with-dependencies.jar -ontFile ./nsp.owl -outFolder . -includeImportedOntologies -webVowl -crossRef -confFile ./nsp.properties
 
 
