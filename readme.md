@@ -1,3 +1,10 @@
+# DEPRECATED!!!
+
+You can retrieve the latest vocabulary from http://normansicily.org/en/resources/download/
+
+<hr>
+
+
 # The Norman Sicily Project Vocabulary
 
 This repo contains the vocabulary for describing the places, locations and names of Norman Sicily that are available through [The Norman Sicily Project's site](http://www.normansicily.org/).
